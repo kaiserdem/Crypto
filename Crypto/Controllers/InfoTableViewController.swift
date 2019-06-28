@@ -9,30 +9,39 @@
 import UIKit
 
 class InfoTableViewController: UITableViewController {
-
-  @IBOutlet var tableViewOutlet: UITableView!
   
-  var modelArray = [String]()
-  var assets: [Assets] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      fetchAssets()
-    }
-  func fetchAssets() {
-    AssetsApiWebSocket.sharedInstance.fetchAssets { [weak self] (assetsArray: [Assets]?) in
-      guard let strongSelf = self else { return }
-      strongSelf.assets = assetsArray!
-    }
+  
+  var assetsModel: [Assets] = []
+  var assetsWatchlist: [Assets] = []
+  var idString = ""
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
   }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return assets.count
-    }
+  
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 54
+  }
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return assetsModel.count
+  }
+  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
-    cell.textLabel?.text = assets[indexPath.row].title
+    let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! ItemTableViewCell
+    let tableAssets = assetsModel[indexPath.row]
+    cell.tableAssets = tableAssets
     return cell
   }
-    
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    self.idString = assetsModel[indexPath.row].id
+    performSegue(withIdentifier: "detailSegueId", sender: self)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    var vc = segue.destination as! DetailCoinVC
+    vc.itemId = self.idString
+  }
+  
 }

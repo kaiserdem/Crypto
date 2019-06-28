@@ -11,6 +11,7 @@ import UIKit
 class Portfolio: UIViewController {
 
   @IBOutlet weak var navigationBarOutlet: UINavigationBar!
+  @IBOutlet weak var backBarWhiteOutlet: UIView!
   @IBOutlet weak var navBarItemOutlet: UINavigationItem!
 
   override func viewDidLoad() {

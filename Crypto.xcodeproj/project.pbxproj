@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		AD2992E122B8E8E400AD1A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2992DF22B8E8E400AD1A3A /* LaunchScreen.storyboard */; };
 		AD2992E922B904FD00AD1A3A /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2992E822B904FD00AD1A3A /* InfoTableViewController.swift */; };
 		AD2992ED22BA61A300AD1A3A /* TradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2992EC22BA61A300AD1A3A /* TradeVC.swift */; };
+		AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */; };
+		AD2C8F2A22BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */; };
+		AD2C8F2E22C0D74800BCEA14 /* DetailCoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2D22C0D74800BCEA14 /* DetailCoinVC.swift */; };
+		AD38A08322BD325E00F13835 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A08222BD325E00F13835 /* ItemTableViewCell.swift */; };
 		AD5F157322BBDCB0008AC2F4 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */; };
 		AD5F157B22BBDE41008AC2F4 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */; };
 		AD5F157C22BBDE41008AC2F4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157622BBDE41008AC2F4 /* libz.tbd */; };
@@ -22,6 +26,9 @@
 		AD5F157F22BBDE42008AC2F4 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157922BBDE41008AC2F4 /* libz.1.1.3.tbd */; };
 		AD5F158022BBDE42008AC2F4 /* libz.1.2.11.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157A22BBDE41008AC2F4 /* libz.1.2.11.tbd */; };
 		AD5F158322BBE0BE008AC2F4 /* AssetsApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F158222BBE0BE008AC2F4 /* AssetsApiWebSocket.swift */; };
+		AD5F158522BC0B1D008AC2F4 /* ApiForResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */; };
+		AD5F158922BC26C1008AC2F4 /* exchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = AD5F158722BC26C1008AC2F4 /* exchanges.json */; };
+		AD5F158A22BC26C1008AC2F4 /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = AD5F158822BC26C1008AC2F4 /* assets.json */; };
 		ADF418BC22BAF037008C4D5C /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BB22BAF037008C4D5C /* Portfolio.swift */; };
 		ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BE22BB7DC8008C4D5C /* ExtensionGragientColor.swift */; };
 		ADF418C222BB8D1E008C4D5C /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C122BB8D1E008C4D5C /* SettingVC.swift */; };
@@ -31,9 +38,12 @@
 		ADF418CB22BBB1A7008C4D5C /* AssetPriceWSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CA22BBB1A7008C4D5C /* AssetPriceWSModel.swift */; };
 		ADF418CD22BBB1C5008C4D5C /* AssetSparklineWSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CC22BBB1C5008C4D5C /* AssetSparklineWSModel.swift */; };
 		ADF418CF22BBB24C008C4D5C /* ExtensionRoundedDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CE22BBB24C008C4D5C /* ExtensionRoundedDouble.swift */; };
+		AE2F23182CA2CA058DB47FE9 /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A9F505C4E988B885F20223 /* Pods_Crypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D5DA76442F51C9401BED292 /* Pods-Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.release.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.release.xcconfig"; sourceTree = "<group>"; };
+		54692541409F75193D90444B /* Pods-Crypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.debug.xcconfig"; path = "Target Support Files/Pods-Crypto/Pods-Crypto.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2992D322B8E8E200AD1A3A /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2992D622B8E8E200AD1A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2992D822B8E8E200AD1A3A /* PricesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesVC.swift; sourceTree = "<group>"; };
@@ -43,6 +53,10 @@
 		AD2992E222B8E8E400AD1A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD2992E822B904FD00AD1A3A /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		AD2992EC22BA61A300AD1A3A /* TradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeVC.swift; sourceTree = "<group>"; };
+		AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineApiWebSocket.swift; sourceTree = "<group>"; };
+		AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPriceApiWebSocket.swift; sourceTree = "<group>"; };
+		AD2C8F2D22C0D74800BCEA14 /* DetailCoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoinVC.swift; sourceTree = "<group>"; };
+		AD38A08222BD325E00F13835 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		AD5F157622BBDE41008AC2F4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -51,6 +65,9 @@
 		AD5F157922BBDE41008AC2F4 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		AD5F157A22BBDE41008AC2F4 /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
 		AD5F158222BBE0BE008AC2F4 /* AssetsApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsApiWebSocket.swift; sourceTree = "<group>"; };
+		AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiForResource.swift; sourceTree = "<group>"; };
+		AD5F158722BC26C1008AC2F4 /* exchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exchanges.json; path = ../../../CryptocurrencyApp/CryptocurrencyApp/SourseJson/exchanges.json; sourceTree = "<group>"; };
+		AD5F158822BC26C1008AC2F4 /* assets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = assets.json; path = ../../../CryptocurrencyApp/CryptocurrencyApp/SourseJson/assets.json; sourceTree = "<group>"; };
 		ADF418BB22BAF037008C4D5C /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		ADF418BE22BB7DC8008C4D5C /* ExtensionGragientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGragientColor.swift; sourceTree = "<group>"; };
 		ADF418C122BB8D1E008C4D5C /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
@@ -60,6 +77,7 @@
 		ADF418CA22BBB1A7008C4D5C /* AssetPriceWSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPriceWSModel.swift; sourceTree = "<group>"; };
 		ADF418CC22BBB1C5008C4D5C /* AssetSparklineWSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSparklineWSModel.swift; sourceTree = "<group>"; };
 		ADF418CE22BBB24C008C4D5C /* ExtensionRoundedDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRoundedDouble.swift; sourceTree = "<group>"; };
+		E7A9F505C4E988B885F20223 /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,18 +91,29 @@
 				AD5F157E22BBDE42008AC2F4 /* libz.1.2.8.tbd in Frameworks */,
 				AD5F157F22BBDE42008AC2F4 /* libz.1.1.3.tbd in Frameworks */,
 				AD5F158022BBDE42008AC2F4 /* libz.1.2.11.tbd in Frameworks */,
+				AE2F23182CA2CA058DB47FE9 /* Pods_Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35D07BF8EF678670CCA30B44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54692541409F75193D90444B /* Pods-Crypto.debug.xcconfig */,
+				4D5DA76442F51C9401BED292 /* Pods-Crypto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AD2992CA22B8E8E200AD1A3A = {
 			isa = PBXGroup;
 			children = (
 				AD2992D522B8E8E200AD1A3A /* Crypto */,
 				AD2992D422B8E8E200AD1A3A /* Products */,
 				AD5F157422BBDE41008AC2F4 /* Frameworks */,
+				35D07BF8EF678670CCA30B44 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				AD2992D622B8E8E200AD1A3A /* AppDelegate.swift */,
-				AD2992DA22B8E8E200AD1A3A /* Main.storyboard */,
+				AD5F158622BC0BF9008AC2F4 /* SourseJson */,
 				AD5F158122BBDE5F008AC2F4 /* Api */,
 				ADF418C322BBB0F3008C4D5C /* Model */,
+				AD38A08122BD295700F13835 /* View */,
 				ADF418C022BB7E16008C4D5C /* Controllers */,
 				ADF418BD22BB7DB3008C4D5C /* Extension */,
 				AD2992DD22B8E8E400AD1A3A /* Assets.xcassets */,
@@ -110,6 +140,15 @@
 				AD2992E222B8E8E400AD1A3A /* Info.plist */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		AD38A08122BD295700F13835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD2992DA22B8E8E200AD1A3A /* Main.storyboard */,
+				AD38A08222BD325E00F13835 /* ItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AD5F157422BBDE41008AC2F4 /* Frameworks */ = {
@@ -121,6 +160,7 @@
 				AD5F157A22BBDE41008AC2F4 /* libz.1.2.11.tbd */,
 				AD5F157722BBDE41008AC2F4 /* libz.1.tbd */,
 				AD5F157622BBDE41008AC2F4 /* libz.tbd */,
+				E7A9F505C4E988B885F20223 /* Pods_Crypto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +170,20 @@
 			children = (
 				AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */,
 				AD5F158222BBE0BE008AC2F4 /* AssetsApiWebSocket.swift */,
+				AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */,
+				AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */,
+				AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		AD5F158622BC0BF9008AC2F4 /* SourseJson */ = {
+			isa = PBXGroup;
+			children = (
+				AD5F158822BC26C1008AC2F4 /* assets.json */,
+				AD5F158722BC26C1008AC2F4 /* exchanges.json */,
+			);
+			path = SourseJson;
 			sourceTree = "<group>";
 		};
 		ADF418BD22BB7DB3008C4D5C /* Extension */ = {
@@ -151,6 +203,7 @@
 				AD2992EC22BA61A300AD1A3A /* TradeVC.swift */,
 				ADF418C122BB8D1E008C4D5C /* SettingVC.swift */,
 				AD2992E822B904FD00AD1A3A /* InfoTableViewController.swift */,
+				AD2C8F2D22C0D74800BCEA14 /* DetailCoinVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD2992E522B8E8E400AD1A3A /* Build configuration list for PBXNativeTarget "Crypto" */;
 			buildPhases = (
+				9BEB678D8412F9BA528A2E43 /* [CP] Check Pods Manifest.lock */,
 				AD2992CF22B8E8E200AD1A3A /* Sources */,
 				AD2992D022B8E8E200AD1A3A /* Frameworks */,
 				AD2992D122B8E8E200AD1A3A /* Resources */,
+				A81C63CA207569622EA6AB5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,13 +280,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5F158922BC26C1008AC2F4 /* exchanges.json in Resources */,
 				AD2992E122B8E8E400AD1A3A /* LaunchScreen.storyboard in Resources */,
 				AD2992DE22B8E8E400AD1A3A /* Assets.xcassets in Resources */,
 				AD2992DC22B8E8E200AD1A3A /* Main.storyboard in Resources */,
+				AD5F158A22BC26C1008AC2F4 /* assets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BEB678D8412F9BA528A2E43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81C63CA207569622EA6AB5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD2992CF22B8E8E200AD1A3A /* Sources */ = {
@@ -243,9 +342,14 @@
 				ADF418C222BB8D1E008C4D5C /* SettingVC.swift in Sources */,
 				ADF418C722BBB146008C4D5C /* AssetsJsonModel.swift in Sources */,
 				ADF418CB22BBB1A7008C4D5C /* AssetPriceWSModel.swift in Sources */,
+				AD38A08322BD325E00F13835 /* ItemTableViewCell.swift in Sources */,
+				AD2C8F2E22C0D74800BCEA14 /* DetailCoinVC.swift in Sources */,
 				AD2992ED22BA61A300AD1A3A /* TradeVC.swift in Sources */,
 				ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */,
 				AD2992E922B904FD00AD1A3A /* InfoTableViewController.swift in Sources */,
+				AD5F158522BC0B1D008AC2F4 /* ApiForResource.swift in Sources */,
+				AD2C8F2A22BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift in Sources */,
+				AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */,
 				AD2992D922B8E8E200AD1A3A /* PricesVC.swift in Sources */,
 				ADF418CD22BBB1C5008C4D5C /* AssetSparklineWSModel.swift in Sources */,
 				ADF418C522BBB127008C4D5C /* ParsAllJsonModel.swift in Sources */,
@@ -396,6 +500,7 @@
 		};
 		AD2992E622B8E8E400AD1A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54692541409F75193D90444B /* Pods-Crypto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +519,7 @@
 		};
 		AD2992E722B8E8E400AD1A3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5DA76442F51C9401BED292 /* Pods-Crypto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

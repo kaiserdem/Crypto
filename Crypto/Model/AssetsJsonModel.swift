@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 struct AssetsJsonModel: Decodable {
   
   let assets: [Assets]
