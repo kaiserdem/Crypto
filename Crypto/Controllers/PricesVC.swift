@@ -11,38 +11,38 @@ import Charts
 
 class PricesVC: UIViewController, UITextFieldDelegate {
   
-  
+  @IBOutlet weak var offlineBarButton: UIBarButtonItem!
   @IBOutlet weak var allCountAssetsLabel: UILabel!
-  @IBOutlet var contentViewOutlet: UIView!
-  
+  @IBOutlet weak var contentViewOutlet: UIView!
   @IBOutlet weak var backBarCornerView: UIView!
-  
   @IBOutlet weak var navItemOutlet: UINavigationItem!
-  
   @IBOutlet weak var allCustButOutlet: UIView!
   @IBOutlet weak var watchlistCustButOutlet: UIView!
-  
   @IBOutlet weak var serchButtonOutlet: UIButton!
   @IBOutlet weak var serchtTFOutlet: UITextField!
   
   var assetsResours: [Assets] = []
-  var assets: [Assets]?
+  var assets: [Assets] = []
   var prices: AssetPriceWSModel?
   var pricesArrayEmpty: [NSMutableArray] = []
   var assetsArrayEmpty: [Assets] = []
   var data: [[Datum]]?
   var watchlistArray: [Assets] = []
   
+  let controller: PricesTableViewCell = PricesTableViewCell()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
- 
+    
     setupNavBarSettings()
     setupTopBarSettings()
     fetchAssetsResours()
+    fetchAssets()
     fetchSparklineData()
-
+    
+    offlineBarButton.tintColor = .white
   }
-  
+ 
   func fetchAssets() {
     AssetsApiWebSocket.sharedInstance.fetchAssets { [weak self] (assetsArray: [Assets]?) in
       guard let strongSelf = self else { return }
@@ -52,19 +52,18 @@ class PricesVC: UIViewController, UITextFieldDelegate {
 
         guard let strongSelf = self else { return }
         strongSelf.prices = priceArray
-
         var sameId = 0
         for i in (priceArray?.prices ?? self!.pricesArrayEmpty) {
           if ((i.firstObject as? NSString) != nil) {
             let newId = i.firstObject
             for oldId in self!.assets ?? self!.assetsArrayEmpty {
-              if oldId.id.isEqual(newId) {
+              if oldId.id!.isEqual(newId) {
                 sameId = 1
                 if ((i.lastObject as? Double) != nil) {
                   let newPrice = i.lastObject
                   if sameId == 1 {
-                    for oldPrice in self!.assets! {
-                      if oldPrice.id.isEqual(i.firstObject) {
+                    for oldPrice in self!.assets {
+                      if oldPrice.id!.isEqual(i.firstObject) {
                         oldPrice.price = newPrice as! Double
                       }
                     }
@@ -74,8 +73,8 @@ class PricesVC: UIViewController, UITextFieldDelegate {
             }
           }
           DispatchQueue.main.async {
-            (self!.children[0] as? InfoTableViewController)?.assetsModel = (self?.assets!)!
-            (self!.children[0] as? InfoTableViewController)?.tableView.reloadData()
+            (self!.children[0] as? PricesTableVC)?.assetsModel = (self?.assets)!
+            (self!.children[0] as? PricesTableVC)?.tableView.reloadData()
           }
         }
       }
@@ -96,7 +95,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     }
   }
   @objc func watchlistBtnAction(_ sender:UITapGestureRecognizer){
-    
     DispatchQueue.main.async {
       self.watchlistCustButOutlet.backgroundColor = .white
       self.watchlistCustButOutlet.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
@@ -108,11 +106,11 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       self.allCustButOutlet.layer.shadowRadius = 0
       self.allCustButOutlet.layer.shadowOpacity = 0
       
-      let arraySlice = self.assetsResours[..<5]
+      let arraySlice = self.assets[..<5]
       self.watchlistArray = Array(arraySlice)
-      (self.children[0] as? InfoTableViewController)?.assetsModel = self.watchlistArray
-      print(self.watchlistArray.count)
-      (self.children[0] as? InfoTableViewController)?.tableView.reloadData()
+      (self.children[0] as? PricesTableVC)?.assetsModel = self.watchlistArray
+      (self.children[0] as? PricesTableVC)?.assetsModel = self.watchlistArray
+      (self.children[0] as? PricesTableVC)?.tableView.reloadData()
     }
   }
   @objc func allBtnAction(_ sender:UITapGestureRecognizer){
@@ -128,20 +126,23 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       self.watchlistCustButOutlet.layer.shadowOpacity = 0
       
       // children - доступ к массиву дочерних контроллеров
-      (self.children[0] as? InfoTableViewController)?.assetsModel = self.assetsResours
-      (self.children[0] as? InfoTableViewController)?.tableView.reloadData()
+      (self.children[0] as? PricesTableVC)?.assetsModel = self.assets
+      (self.children[0] as? PricesTableVC)?.tableView.reloadData()
     }
   }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "infoSegue" {
-      let infoTabVC = segue.destination as? InfoTableViewController
+      let infoTabVC = segue.destination as? PricesTableVC
             // первые данные
       fetchAssets()
-      if self.assets == nil {
-        fetchAssetsResours()
-        infoTabVC?.assetsModel = self.assetsResours
-      } else if ((infoTabVC?.assetsModel = self.assets!) != nil) {
-      }
+       infoTabVC?.assetsModel = self.assets
+
+//      if self.assets == nil {
+//        fetchAssetsResours()
+//        infoTabVC?.assetsModel = self.assetsResours
+//      } else if ((infoTabVC?.assetsModel = self.assets!) != nil) {
+//      }
     }
   }
   
@@ -168,11 +169,9 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     
     self.navItemOutlet.titleView = titleLabel
     self.navigationController?.navigationBar.setGradientBackground(colors: colors)
-  
   }
   
   private func setupTopBarSettings() {
-    
     serchtTFOutlet.delegate = self
     
     serchButtonOutlet.setImage(UIImage(named: "search64")?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)
@@ -197,8 +196,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
 }
 
 /*
- Давайте еще раз разберем что тут происходит.
- 
  Основной ViewController для отображения содержания Container View совершает переход segue к контроллеру InfoTableViewController. Это означает, что перед переходом вызывается метод prepare(for segue:), в котором мы можем получить доступ к контроллеру, в который совершается переход. После получения ссылки на этот контроллер, мы передаем массив с данными в массив модели таблицы.
  
  Внимание! Для проверки работоспособности этой передачи информации не забудьте в классе InfoTableViewController в методе viewDidLoad() закомментировать строку с добавлением тестовых данных.
@@ -208,4 +205,8 @@ class PricesVC: UIViewController, UITextFieldDelegate {
  В массив data мы заносим данные, которые хотим передать в таблицу.
  Используя свойство childViewControllers нашего ViewController мы получаем доступ к массиву дочерних контроллеров. С учетом того, что в нашем случае он единственный, мы используем индекс [0] для получения ссылки на него.  И в свойство modelArray передаем массив data
  Факта передачи данных недостаточно. Таблица уже отображает данные, которые в нее были загружены при инициализации. Хоть в массиве модели уже присутствуют другие данные, их таблица не отобразит. Именно поэтому мы вызываем метод reloadData() у свойства tableView. В этом случае новые данные отобразятся.
+ */
+
+/*
+ [0.48674666,0.48679666,0.48671666,0.42674666,0.42697414,0.42930927,0.42750263,0.42768186,0.42625276,0.42632109,0.42681791,0.42513552,0.42204073,0.42450601,0.42602617,0.42510613,0.45721984,0.45419202,0.45925019,0.45842745,0.45964609,0.46630393,0.45762964,0.45578137,0.46369375,0.4699259,0.46414812,0.4658122,0.47700516,0.4690174,0.48044204,0.47068715,0.47356953,0.47741759,0.4730036,0.47595446,0.48082541,0.47600384,0.47603397,0.47905846,0.47174694,0.46534131,0.46907852,0.46421935,0.46749744,0.47083961,0.47206238,0.47446015,0.4735839,0.47193777,0.47268355,0.472165171652468]
  */

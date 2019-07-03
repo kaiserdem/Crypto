@@ -9,6 +9,7 @@
 import UIKit
 
 class AssetPriceApiWebSocket: NSObject {
+
   
   static let sharedInstance = AssetPriceApiWebSocket()
   
@@ -62,7 +63,7 @@ class AssetPriceApiWebSocket: NSObject {
         print(error)
       }
       if let text = message as? String {
-        //  print(text)
+          //print(text)
       }
     }
   }

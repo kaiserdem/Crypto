@@ -8,12 +8,11 @@
 
 import UIKit
 
-class InfoTableViewController: UITableViewController {
-  
+class PricesTableVC: UITableViewController {
   
   var assetsModel: [Assets] = []
   var assetsWatchlist: [Assets] = []
-  var idString = ""
+  var sendAssets: [Assets] = []
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -28,20 +27,21 @@ class InfoTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! ItemTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! PricesTableViewCell
     let tableAssets = assetsModel[indexPath.row]
     cell.tableAssets = tableAssets
     return cell
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    self.idString = assetsModel[indexPath.row].id
+    self.sendAssets = [assetsModel[indexPath.row]]
+    
     performSegue(withIdentifier: "detailSegueId", sender: self)
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    var vc = segue.destination as! DetailCoinVC
-    vc.itemId = self.idString
+    var vc = segue.destination as! CoinInfoVC
+    vc.acceptAssets = self.sendAssets
   }
   
 }

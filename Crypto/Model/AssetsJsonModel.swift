@@ -19,18 +19,18 @@ struct AssetsJsonModel: Decodable {
   }
 }
 class Assets: Decodable {
-  var id: String
-  var symbol: String
-  var title: String
-  var icon: String
-  var changed: Bool // изменено
-  var price: Double // цена
-  var rank: Int     // звание, разряд
-  var change: Double // измения
-  var circulating: Double // циркулирующий
-  var maxSupply: Double // максимальная ставка
-  var volume24: Double // объем за сутки
-  var marketcap: Double // Рыночная капитализация
+  var id: String?
+  var symbol: String?
+  var title: String?
+  var icon: String?
+  var changed: Bool? // изменено
+  var price: Double? // цена
+  var rank: Int?     // звание, разряд
+  var change: Double? // измения
+  var circulating: Double? // циркулирующий
+  var maxSupply: Double? // максимальная ставка
+  var volume24: Double? // объем за сутки
+  var marketcap: Double? // Рыночная капитализация
   
   enum CodingKeys: String, CodingKey {
     case id = "id"
