@@ -13,6 +13,9 @@ class CoinInfoVC: UIViewController {
   
   @IBOutlet weak var lineChartView: LineChartView!
   
+  @IBOutlet weak var widthConstraintTopPtogresView: NSLayoutConstraint!
+  @IBOutlet weak var widthConstraintpBackProgresView: NSLayoutConstraint!
+
   @IBOutlet weak var buttonBarUSD: UIView!
   @IBOutlet weak var buttonBarBTC: UIView!
   @IBOutlet weak var buttonBarKRW: UIView!
@@ -34,17 +37,15 @@ class CoinInfoVC: UIViewController {
   @IBOutlet weak var volume24Label: UILabel!
   @IBOutlet weak var circulatingLabel: UILabel!
   @IBOutlet weak var maxSupplyLabel: UILabel!
-  @IBOutlet weak var topProgresView: UIView!
+  @IBOutlet weak var topProgresView: UIView! // progress
   @IBOutlet weak var progressViewBack: UIView!
   @IBOutlet weak var topViewForShadow: UIView!
-  
-  @IBOutlet weak var dayTextView: UIView!
+  @IBOutlet weak var dayTextView: UIView! // bar charts text
   @IBOutlet weak var weekTextView: UIView!
   @IBOutlet weak var monthTextView: UIView!
   @IBOutlet weak var yearTextView: UIView!
   @IBOutlet weak var twoYearsTextView: UIView!
-  
-  @IBOutlet weak var dayTopView: UIView!
+  @IBOutlet weak var dayTopView: UIView! // bar charts top
   @IBOutlet weak var weekTopView: UIView!
   @IBOutlet weak var monthTopView: UIView!
   @IBOutlet weak var yearTopView: UIView!
@@ -67,15 +68,21 @@ class CoinInfoVC: UIViewController {
     setupTopBarButtonSettings()
     openUSDButtonBar()
     setupChartsTopBarSettings()
+    progressBar()
   }
  
+  
   func updateAssets() {
+    
     for i in acceptAssets {
       
       let price = i.price
-      let double = price!.rounded(toPlaces: 1)
-      self.priceLabel.text = String(describing: double)
-      
+      let priceDouble = Double((10*price!).rounded()/10000).rounded(toPlaces: 2)
+//      if i.id != "bitcoin" {
+//        self.priceLabel.text = String(describing: priceDouble) + "K"
+//      }
+      self.priceLabel.text = String(describing: priceDouble)
+
       let title = i.title
       self.titleLabel.text = title
       
@@ -87,26 +94,43 @@ class CoinInfoVC: UIViewController {
       self.rankLabel.text = String(describing: rank!)
       
       let volume24 = i.volume24
-      let volume24Double = volume24!.rounded(toPlaces: 2)
+      let volume24Double = Double((1*volume24!).rounded()/1000000000).rounded(toPlaces: 1)
       self.volume24Label.text = "$" + String(describing: volume24Double) + "B"
       
       let marketcap = i.marketcap
-      let marketcapDouble = marketcap!.rounded(toPlaces: 2)
+      let marketcapDouble = Double((1*marketcap!).rounded()/1000000000).rounded(toPlaces: 1)
       self.marcketcapLabel.text = "$" + String(describing: marketcapDouble) + "B"
-      
+  
       let symbol = i.symbol
       self.symbolLabel.text = String(describing: symbol!)
       
+      let circulating = i.circulating
+      let circulatingDouble = Double((1*circulating!).rounded()/1000000).rounded(toPlaces: 1)
+      self.circulatingLabel.text = String(describing: circulatingDouble) + "M BTC"
+      
       let maxSupply = i.maxSupply
-      let maxSupplyDouble = maxSupply!.rounded(toPlaces: 2)
+      let maxSupplyDouble = Double((1*maxSupply!).rounded()/1000000).rounded(toPlaces: 1)
       self.maxSupplyLabel.text = String(describing: maxSupplyDouble) + "M BTC"
       
-      let circulating = i.circulating
-      let circulatingDouble = circulating!.rounded(toPlaces: 2)
-      self.circulatingLabel.text = String(describing: circulatingDouble) + "M BTC"
+      self.progressViewBack.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+      self.topProgresView.backgroundColor = #colorLiteral(red: 0.451000005, green: 0.6859999895, blue: 0.1490000039, alpha: 1)
       
     }
   }
+  func progressBar() {
+    for i in self.acceptAssets {
+      if i.maxSupply?.isZero == false  {     // && i.circulating != nil
+        let oneWidthBack = (widthConstraintpBackProgresView.constant / CGFloat(i.maxSupply!))
+        let newWidthTop = (oneWidthBack * CGFloat(i.circulating!))
+        self.widthConstraintTopPtogresView.constant = newWidthTop
+      } else {
+        progressViewBack.isHidden = true
+        topProgresView.isHidden = true
+      }
+    }
+  }
+  //print("\(widthConstraintTopPtogresView!) -> \(oneWidthTop)")
+  //print(i.circulating)
 //  func fetchAssets() {
 //    AssetsApiWebSocket.sharedInstance.fetchAssets { [weak self] (assetsArray: [Assets]?) in
 //      guard let strongSelf = self else { return }
@@ -153,13 +177,19 @@ class CoinInfoVC: UIViewController {
     SparklineApiWebSocket.sharedInstance.fetchWebSocketSparkline { [weak self] (dataSparklineArray: [[Datum]]?) in
       guard let  strongSelf = self else  { return }
       strongSelf.data = dataSparklineArray
-      for i in [dataSparklineArray] {
-        let chartArray = i?.first
-        let id = chartArray?.first
+      for i in (self?.data)! {
+        let id = i.first
         if id.debugDescription == self!.acceptAssets.first?.id {
-          
+          print("hello")
         }
       }
+      
+//      for i in [dataSparklineArray] { // 1219 масивов
+//        let chartArray = i?.first //3 елемента  две строки и масив даблов
+//        let id = chartArray?.first // беру строку
+//        if id.debugDescription == self!.acceptAssets.first?.id { // выходит из цыкла, дальше не проверяет
+//        }
+//      }
     }
   }
   

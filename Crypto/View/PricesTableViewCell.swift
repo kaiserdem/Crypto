@@ -40,12 +40,6 @@ class PricesTableViewCell: UITableViewCell {
     }
   }
   
-  
-  var tableSparkline: Datum! {
-    didSet {
-      print("tableSparkline")
-    }
-  }
  
 func setLineChart(values: [Double]) {
     
@@ -82,6 +76,5 @@ func setLineChart(values: [Double]) {
     lineChartView.rightAxis.enabled = false
     lineChartView.xAxis.drawLabelsEnabled = false
     
-    //addSubview(lineChartView)
   }
 }

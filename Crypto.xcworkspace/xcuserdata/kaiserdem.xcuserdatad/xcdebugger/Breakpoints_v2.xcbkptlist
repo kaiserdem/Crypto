@@ -9,14 +9,62 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Crypto/Controllers/PricesVC.swift"
-            timestampString = "583851642.5048259"
+            filePath = "Crypto/Controllers/CoinInfoVC.swift"
+            timestampString = "583941589.263666"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "fetchSparklineData()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Controllers/CoinInfoVC.swift"
+            timestampString = "583941589.264563"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "fetchSparklineData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;Crypto.Datum&gt;&gt;&gt;) -&gt; () in Crypto.CoinInfoVC.fetchSparklineData() -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Controllers/CoinInfoVC.swift"
+                  timestampString = "583926257.336926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;Crypto.Datum&gt;&gt;&gt;) -&gt; () in Crypto.CoinInfoVC.fetchSparklineData() -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Controllers/CoinInfoVC.swift"
+                  timestampString = "583926257.3407331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "1704">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

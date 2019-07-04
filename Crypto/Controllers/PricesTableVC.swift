@@ -13,6 +13,8 @@ class PricesTableVC: UITableViewController {
   var assetsModel: [Assets] = []
   var assetsWatchlist: [Assets] = []
   var sendAssets: [Assets] = []
+  var data: [Datum] = []
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
