@@ -142,6 +142,7 @@ class CoinInfoVC: UIViewController {
       } else {
         progressViewBack.isHidden = true
         topProgresView.isHidden = true
+        maxSupplyLabel.text = "Unlimited"
       }
     }
   }
@@ -441,7 +442,7 @@ class CoinInfoVC: UIViewController {
       self.maxPriceLabel.text = String(describing: maxPrice!)
       
       let minPrice = self.mounthArray.min()?.rounded(toPlaces: 2)
-      self.maxPriceLabel.text = String(describing: minPrice!)
+      self.minPriceLabel.text = String(describing: minPrice!)
       
     self.dayTopView.backgroundColor = .clear
     self.weekTopView.backgroundColor = .clear
@@ -458,7 +459,7 @@ class CoinInfoVC: UIViewController {
       self.maxPriceLabel.text = String(describing: maxPrice!)
       
       let minPrice = self.yearArray.min()?.rounded(toPlaces: 2)
-      self.maxPriceLabel.text = String(describing: minPrice!)
+      self.minPriceLabel.text = String(describing: minPrice!)
       
     self.dayTopView.backgroundColor = .clear
     self.weekTopView.backgroundColor = .clear
