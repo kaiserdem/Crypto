@@ -17,6 +17,10 @@ class PricesTableViewCell: UITableViewCell {
   @IBOutlet weak var priceLabelOutlet: UILabel!
   @IBOutlet weak var changeLabelOutlet: UILabel!
   
+  var arrayImages: [UIImage] = [#imageLiteral(resourceName: "bitcoin"), #imageLiteral(resourceName: "litecoin"), #imageLiteral(resourceName: "ethereum")]
+  
+  
+  
   var tableAssets: Assets! {
     didSet {
       updateUI()
@@ -31,6 +35,11 @@ class PricesTableViewCell: UITableViewCell {
       priceLabelOutlet.text = String(describing: double)
     } else {
       priceLabelOutlet.text = "0"
+    }
+    for i in arrayImages {
+      if i.accessibilityIdentifier == tableAssets.id{
+        iconImageViewOutlet.image = i
+      }
     }
     if let change = tableAssets?.change {
       let double = change.rounded(toPlaces: 2)

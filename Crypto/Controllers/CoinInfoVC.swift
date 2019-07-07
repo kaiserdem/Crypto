@@ -62,6 +62,24 @@ class CoinInfoVC: UIViewController {
   var chartYearArray = [NSNumber]()
   var chartTwoYaearArray = [NSNumber]()
   
+  var imageDictionary = ["bitcoin": UIImage(named: "bitcoin"),
+                         "eos": UIImage(named: "eos"),
+                         "cosmos": UIImage(named: "cosmos"),
+                         "ethereum": UIImage(named: "ethereum"),
+                         "binance-coin": UIImage(named: "binance-coin"),
+                         "ripple": UIImage(named: "ripple"),
+                         "dash": UIImage(named: "dash"),
+                         "bitcoin-sv": UIImage(named: "bitcoin-sv"),
+                         "tether": UIImage(named: "tether"),
+                         "tron": UIImage(named: "tron"),
+                         "cardano": UIImage(named: "cardano"),
+                         "bitcoin-cash": UIImage(named: "bitcoin-cash"),
+                         "monero": UIImage(named: "monero"),
+                         "neo": UIImage(named: "neo"),
+                         "iota": UIImage(named: "iota"),
+                         "litecoin": UIImage(named: "litecoin"),
+                         "ethereum-classic": UIImage(named: "ethereum-classic")]
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -80,6 +98,12 @@ class CoinInfoVC: UIViewController {
     
     for i in acceptAssets {
       
+      let id  = i.id
+      for (key, value) in imageDictionary {
+        if key == id {
+          self.iconImagevVew.image = value
+        }
+      }
       let price = i.price
       let priceDouble = Double((10*price!).rounded()/10000).rounded(toPlaces: 2)
       //      if i.id != "bitcoin" {
@@ -118,6 +142,8 @@ class CoinInfoVC: UIViewController {
       
       self.progressViewBack.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
       self.topProgresView.backgroundColor = #colorLiteral(red: 0.451000005, green: 0.6859999895, blue: 0.1490000039, alpha: 1)
+      
+      
     }
   }
   func progressBar() {
@@ -457,54 +483,4 @@ class CoinInfoVC: UIViewController {
       self.twoYearsTopView.backgroundColor = .black
     }
   }
-  
 }
-
-
-
-
-
-//print("\(widthConstraintTopPtogresView!) -> \(oneWidthTop)")
-//print(i.circulating)
-//  func fetchAssets() {
-//    AssetsApiWebSocket.sharedInstance.fetchAssets { [weak self] (assetsArray: [Assets]?) in
-//      guard let strongSelf = self else { return }
-//      strongSelf.assets = assetsArray!
-//      for i in assetsArray! {
-//        if i.id == self!.itemId {
-//          let price = i.price
-//          let double = price!.rounded(toPlaces: 1)
-//          self!.priceLabel.text = String(describing: double)
-//
-//          let title = i.title
-//          self!.titleLabel.text = title
-//
-//          let change = i.change
-//          let changeDouble = change!.rounded(toPlaces: 2)
-//          self!.changeLabel.text = String(describing: changeDouble) + "%"
-//
-//          let rank = i.rank
-//          self!.rankLabel.text = String(describing: rank!)
-//
-//          let volume24 = i.volume24
-//          let volume24Double = volume24!.rounded(toPlaces: 2)
-//          self!.volume24Label.text = "$" + String(describing: volume24Double) + "B"
-//
-//          let marketcap = i.marketcap
-//          let marketcapDouble = marketcap!.rounded(toPlaces: 2)
-//          self!.marcketcapLabel.text = "$" + String(describing: marketcapDouble) + "B"
-//
-//          let symbol = i.symbol
-//          self!.symbolLabel.text = String(describing: symbol!)
-//
-//          let maxSupply = i.maxSupply
-//          let maxSupplyDouble = maxSupply!.rounded(toPlaces: 2)
-//          self!.maxSupplyLabel.text = String(describing: maxSupplyDouble) + "M BTC"
-//
-//          let circulating = i.circulating
-//          let circulatingDouble = circulating!.rounded(toPlaces: 2)
-//          self!.circulatingLabel.text = String(describing: circulatingDouble) + "M BTC"
-//        }
-//      }
-//    }
-//  }

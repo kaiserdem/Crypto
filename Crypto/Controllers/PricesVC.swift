@@ -87,7 +87,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       strongSelf.data = dataSparklineArray
     }
   }
-  
   func fetchAssetsResours() {
     ApiForResource.sharedInstance.fetchAssetsResource { [weak self] (assetsArray: [Assets]?) in
       guard let strongSelf = self else { return }
@@ -125,7 +124,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       self.watchlistCustButOutlet.layer.shadowRadius = 0
       self.watchlistCustButOutlet.layer.shadowOpacity = 0
       
-      // children - доступ к массиву дочерних контроллеров
       (self.children[0] as? PricesTableVC)?.assetsModel = self.assets
       (self.children[0] as? PricesTableVC)?.tableView.reloadData()
     }
@@ -134,15 +132,8 @@ class PricesVC: UIViewController, UITextFieldDelegate {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "infoSegue" {
       let infoTabVC = segue.destination as? PricesTableVC
-            // первые данные
       fetchAssets()
        infoTabVC?.assetsModel = self.assets
-
-//      if self.assets == nil {
-//        fetchAssetsResours()
-//        infoTabVC?.assetsModel = self.assetsResours
-//      } else if ((infoTabVC?.assetsModel = self.assets!) != nil) {
-//      }
     }
   }
   
@@ -194,19 +185,3 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     self.allCustButOutlet.addGestureRecognizer(allGesture)
   }
 }
-
-/*
- Основной ViewController для отображения содержания Container View совершает переход segue к контроллеру InfoTableViewController. Это означает, что перед переходом вызывается метод prepare(for segue:), в котором мы можем получить доступ к контроллеру, в который совершается переход. После получения ссылки на этот контроллер, мы передаем массив с данными в массив модели таблицы.
- 
- Внимание! Для проверки работоспособности этой передачи информации не забудьте в классе InfoTableViewController в методе viewDidLoad() закомментировать строку с добавлением тестовых данных.
- 
- Запустите проект заново и посмотрите результат:
- 
- В массив data мы заносим данные, которые хотим передать в таблицу.
- Используя свойство childViewControllers нашего ViewController мы получаем доступ к массиву дочерних контроллеров. С учетом того, что в нашем случае он единственный, мы используем индекс [0] для получения ссылки на него.  И в свойство modelArray передаем массив data
- Факта передачи данных недостаточно. Таблица уже отображает данные, которые в нее были загружены при инициализации. Хоть в массиве модели уже присутствуют другие данные, их таблица не отобразит. Именно поэтому мы вызываем метод reloadData() у свойства tableView. В этом случае новые данные отобразятся.
- */
-
-/*
- [0.48674666,0.48679666,0.48671666,0.42674666,0.42697414,0.42930927,0.42750263,0.42768186,0.42625276,0.42632109,0.42681791,0.42513552,0.42204073,0.42450601,0.42602617,0.42510613,0.45721984,0.45419202,0.45925019,0.45842745,0.45964609,0.46630393,0.45762964,0.45578137,0.46369375,0.4699259,0.46414812,0.4658122,0.47700516,0.4690174,0.48044204,0.47068715,0.47356953,0.47741759,0.4730036,0.47595446,0.48082541,0.47600384,0.47603397,0.47905846,0.47174694,0.46534131,0.46907852,0.46421935,0.46749744,0.47083961,0.47206238,0.47446015,0.4735839,0.47193777,0.47268355,0.472165171652468]
- */

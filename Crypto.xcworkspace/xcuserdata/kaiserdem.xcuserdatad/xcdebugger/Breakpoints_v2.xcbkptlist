@@ -6,143 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Crypto/Controllers/CoinInfoVC.swift"
-            timestampString = "584185512.541175"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "fetchSparklineItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Crypto/Controllers/CoinInfoVC.swift"
-            timestampString = "584185512.541798"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "fetchSparklineItem()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Crypto.CoinInfoVC.fetchSparklineItem() -&gt; ()"
-                  moduleName = "Crypto"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Controllers/CoinInfoVC.swift"
-                  timestampString = "584184664.296549"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "480">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Crypto.ItemSparklineModel&gt;) -&gt; () in Crypto.CoinInfoVC.fetchSparklineItem() -&gt; ()"
-                  moduleName = "Crypto"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Controllers/CoinInfoVC.swift"
-                  timestampString = "584184664.300128"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Crypto/Controllers/CoinInfoVC.swift"
-            timestampString = "584185512.542142"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "fetchSparklineItem()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Crypto/Api/SparklineItemApiWebSocket.swift"
-            timestampString = "584185512.5424809"
+            timestampString = "584210702.798315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "fetchWebSocketAllSparkline(id:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Crypto.SparklineItemApiWebSocket.fetchWebSocketAllSparkline(id: Swift.String, completion: (Swift.Optional&lt;Crypto.ItemSparklineModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Crypto"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Api/SparklineItemApiWebSocket.swift"
-                  timestampString = "584184664.313127"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Crypto.SparklineItemApiWebSocket.fetchWebSocketAllSparkline(id: Swift.String, completion: (Swift.Optional&lt;Crypto.ItemSparklineModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Crypto"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kaiserdem/Desktop/Dev/Crypto/Crypto/Api/SparklineItemApiWebSocket.swift"
-                  timestampString = "584184664.315408"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Crypto/Api/SparklineItemApiWebSocket.swift"
-            timestampString = "584185512.5425431"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "fetchWebSocketAllSparkline(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>

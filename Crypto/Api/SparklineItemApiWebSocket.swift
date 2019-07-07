@@ -21,12 +21,7 @@ class SparklineItemApiWebSocket: NSObject {
     
     ws.event.open = {
       print("opened")
-      
-      //  "{\"event\":\"asset-sparkline\", \"asset\":\"bitcoin\"}" -> "asset":bitcoin-cash}
-      //  "{\"event\":\"asset-sparkline\", \"asset\":\"(id)\"}" -> "asset":"(id)"}
-      
       ws.send("{\"event\":\"asset-sparkline\", \"asset\":\"\(id)\"}")
-      print("{\"event\":\"asset-sparkline\", \"asset\":\"\(id)\"}")
     }
     ws.event.close = { code, reason, clean in
       print("close")

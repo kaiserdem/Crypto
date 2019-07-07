@@ -318,7 +318,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit32" translatesAutoresizingMaskIntoConstraints="NO" id="pgM-Dd-tBn">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="pgM-Dd-tBn">
                                             <rect key="frame" x="16" y="12" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="ggI-sa-3Cf"/>
@@ -420,7 +420,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwQ-zo-Egs" userLabel="backBarCornerView">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="440"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit32" translatesAutoresizingMaskIntoConstraints="NO" id="Z6U-pu-XdY">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="Z6U-pu-XdY">
                                                                 <rect key="frame" x="20" y="15" width="30" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="upd-63-vbP"/>
@@ -1157,7 +1157,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bit32" translatesAutoresizingMaskIntoConstraints="NO" id="iSy-6h-rOH">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iSy-6h-rOH">
                                             <rect key="frame" x="20" y="8.5" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Mah-hs-qbB"/>
@@ -1275,7 +1275,7 @@
     </scenes>
     <resources>
         <image name="alert" width="64" height="64"/>
-        <image name="bit32" width="32" height="32"/>
+        <image name="bitcoin" width="64" height="64"/>
         <image name="cog" width="28" height="28"/>
         <image name="offline" width="40" height="40"/>
         <image name="portfolio" width="56" height="56"/>

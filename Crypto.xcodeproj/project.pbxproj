@@ -212,11 +212,11 @@
 			isa = PBXGroup;
 			children = (
 				AD2992D822B8E8E200AD1A3A /* PricesVC.swift */,
+				AD2992E822B904FD00AD1A3A /* PricesTableVC.swift */,
 				ADF418BB22BAF037008C4D5C /* Portfolio.swift */,
 				AD2992EC22BA61A300AD1A3A /* TradeVC.swift */,
 				ADF418C122BB8D1E008C4D5C /* SettingVC.swift */,
 				AD2C8F2D22C0D74800BCEA14 /* CoinInfoVC.swift */,
-				AD2992E822B904FD00AD1A3A /* PricesTableVC.swift */,
 				ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */,
 			);
 			path = Controllers;
