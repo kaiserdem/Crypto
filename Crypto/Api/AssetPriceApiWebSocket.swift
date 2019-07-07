@@ -63,7 +63,7 @@ class AssetPriceApiWebSocket: NSObject {
         print(error)
       }
       if let text = message as? String {
-          //print(text)
+       // print(text)
       }
     }
   }

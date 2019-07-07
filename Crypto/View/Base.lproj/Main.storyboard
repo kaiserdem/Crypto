@@ -496,20 +496,20 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP7-Ve-4bG">
                                                                 <rect key="frame" x="0.0" y="59" width="375" height="381"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGx-R0-LG9">
-                                                                        <rect key="frame" x="310" y="15" width="45" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGx-R0-LG9">
+                                                                        <rect key="frame" x="305" y="15" width="50" height="21"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="21" id="Fd8-n2-RGV"/>
-                                                                            <constraint firstAttribute="width" constant="45" id="Ml9-Am-Y7V"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="Ml9-Am-Y7V"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fm-xt-Y8U">
-                                                                        <rect key="frame" x="310" y="135" width="45" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fm-xt-Y8U">
+                                                                        <rect key="frame" x="305" y="135" width="50" height="21"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="45" id="8lO-YR-jEB"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="8lO-YR-jEB"/>
                                                                             <constraint firstAttribute="height" constant="21" id="wu7-1K-qQ2"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>

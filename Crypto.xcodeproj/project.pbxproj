@@ -30,6 +30,8 @@
 		AD5F158522BC0B1D008AC2F4 /* ApiForResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */; };
 		AD5F158922BC26C1008AC2F4 /* exchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = AD5F158722BC26C1008AC2F4 /* exchanges.json */; };
 		AD5F158A22BC26C1008AC2F4 /* assets.json in Resources */ = {isa = PBXBuildFile; fileRef = AD5F158822BC26C1008AC2F4 /* assets.json */; };
+		AD7405A622D0E07C009030BD /* SparklineItemApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7405A522D0E07C009030BD /* SparklineItemApiWebSocket.swift */; };
+		AD7405A822D0E0E3009030BD /* ItemSparklineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7405A722D0E0E3009030BD /* ItemSparklineModel.swift */; };
 		ADD0D98122C8F47B003A58C0 /* CoinInfoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */; };
 		ADD0D98322C9EB61003A58C0 /* CoinInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0D98222C9EB61003A58C0 /* CoinInfoTableViewCell.swift */; };
 		ADF418BC22BAF037008C4D5C /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BB22BAF037008C4D5C /* Portfolio.swift */; };
@@ -72,6 +74,8 @@
 		AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiForResource.swift; sourceTree = "<group>"; };
 		AD5F158722BC26C1008AC2F4 /* exchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exchanges.json; path = ../../../CryptocurrencyApp/CryptocurrencyApp/SourseJson/exchanges.json; sourceTree = "<group>"; };
 		AD5F158822BC26C1008AC2F4 /* assets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = assets.json; path = ../../../CryptocurrencyApp/CryptocurrencyApp/SourseJson/assets.json; sourceTree = "<group>"; };
+		AD7405A522D0E07C009030BD /* SparklineItemApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineItemApiWebSocket.swift; sourceTree = "<group>"; };
+		AD7405A722D0E0E3009030BD /* ItemSparklineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSparklineModel.swift; sourceTree = "<group>"; };
 		ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableVC.swift; sourceTree = "<group>"; };
 		ADD0D98222C9EB61003A58C0 /* CoinInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ADF418BB22BAF037008C4D5C /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */,
 				AD5F158422BC0B1D008AC2F4 /* ApiForResource.swift */,
 				AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */,
+				AD7405A522D0E07C009030BD /* SparklineItemApiWebSocket.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				ADF418C822BBB185008C4D5C /* ExchangesJsomModel.swift */,
 				ADF418CA22BBB1A7008C4D5C /* AssetPriceWSModel.swift */,
 				ADF418CC22BBB1C5008C4D5C /* AssetSparklineWSModel.swift */,
+				AD7405A722D0E0E3009030BD /* ItemSparklineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,7 +363,9 @@
 				ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */,
 				AD2992E922B904FD00AD1A3A /* PricesTableVC.swift in Sources */,
 				AD5F158522BC0B1D008AC2F4 /* ApiForResource.swift in Sources */,
+				AD7405A622D0E07C009030BD /* SparklineItemApiWebSocket.swift in Sources */,
 				ADD0D98122C8F47B003A58C0 /* CoinInfoTableVC.swift in Sources */,
+				AD7405A822D0E0E3009030BD /* ItemSparklineModel.swift in Sources */,
 				AD2C8F2A22BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift in Sources */,
 				ADD0D98322C9EB61003A58C0 /* CoinInfoTableViewCell.swift in Sources */,
 				AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */,

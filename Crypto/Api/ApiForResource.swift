@@ -22,7 +22,7 @@ class ApiForResource: NSObject {
       let jsonModel = try JSONDecoder().decode(AssetsJsonModel.self, from: jsonData)
       completion(jsonModel.assets)
     } catch let error {
-      print(error)
+    //  print(error)
     }
   }
 }

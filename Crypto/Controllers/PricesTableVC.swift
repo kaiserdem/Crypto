@@ -42,8 +42,12 @@ class PricesTableVC: UITableViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    var vc = segue.destination as! CoinInfoVC
-    vc.acceptAssets = self.sendAssets
+    
+    let coinVC = segue.destination as! CoinInfoVC
+    coinVC.acceptAssets = self.sendAssets
+    
+//    let sparklineVC = segue.destination as! SparklineItemApiWebSocket
+//    sparklineVC.acceptAssets = self.sendAssets
   }
   
 }
