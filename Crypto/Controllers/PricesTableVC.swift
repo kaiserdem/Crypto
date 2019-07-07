@@ -45,10 +45,6 @@ class PricesTableVC: UITableViewController {
     SparklineApiWebSocket.sharedInstance.fetchWebSocketSparkline { [weak self] (dataSparklineArray: AssetSparklineWSModel?) in
       guard let  strongSelf = self else  { return }
       strongSelf.dataItem = dataSparklineArray
-      
-    //  for i1 in (dataSparklineArray?.data ?? self!.dataArrayEmpty) {
-        
-    //  }
     }
   }
   
@@ -64,17 +60,19 @@ class PricesTableVC: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! PricesTableViewCell
     let tableAssets = assetsModel[indexPath.row]
     let id  = tableAssets.id
+    let change = tableAssets.change
+    var greenColor = true
+    if Int(change!) < 0 {
+      greenColor = false
+    }
     if (dataItem?.data) != nil {
-      for i in (dataItem?.data)! {
+      for i in (dataItem?.data)! {  // цикл графиков
         if (i[0] as! String) == id {
-          cell.setLineChart(values: i[2] as! [Double])
+          cell.setLineChart(valueColor: greenColor, values: i[2] as! [Double])
         }
-        
       }
     }
-
-    
-    for (key, value) in imageDictionary {
+    for (key, value) in imageDictionary { // цикл картинок
       if key == id {
         cell.iconImageViewOutlet.image = value
       }
