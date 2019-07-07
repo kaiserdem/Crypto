@@ -63,21 +63,23 @@ class CoinInfoVC: UIViewController {
   var chartTwoYaearArray = [NSNumber]()
   
   var imageDictionary = ["bitcoin": UIImage(named: "bitcoin"),
-                         "eos": UIImage(named: "eos"),
-                         "cosmos": UIImage(named: "cosmos"),
                          "ethereum": UIImage(named: "ethereum"),
-                         "binance-coin": UIImage(named: "binance-coin"),
                          "ripple": UIImage(named: "ripple"),
-                         "dash": UIImage(named: "dash"),
-                         "bitcoin-sv": UIImage(named: "bitcoin-sv"),
-                         "tether": UIImage(named: "tether"),
-                         "tron": UIImage(named: "tron"),
-                         "cardano": UIImage(named: "cardano"),
+                         "litecoin": UIImage(named: "litecoin"),
                          "bitcoin-cash": UIImage(named: "bitcoin-cash"),
+                         "eos": UIImage(named: "eos"),
+                         "binance-coin": UIImage(named: "binance-coin"),
+                         "tether": UIImage(named: "tether"),
+                         "bitcoin-sv": UIImage(named: "bitcoin-sv"),
+                         "tron": UIImage(named: "tron"),
+                         "stellar": UIImage(named: "stellar"),
+                         "cardano": UIImage(named: "cardano"),
                          "monero": UIImage(named: "monero"),
+                         "dash": UIImage(named: "dash"),
+                         "cosmos": UIImage(named: "cosmos"),
+                         "chainlink": UIImage(named: "chainlink"),
                          "neo": UIImage(named: "neo"),
                          "iota": UIImage(named: "iota"),
-                         "litecoin": UIImage(named: "litecoin"),
                          "ethereum-classic": UIImage(named: "ethereum-classic")]
   
   override func viewDidLoad() {

@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct AssetSparklineWSModel {
+  var data: [NSMutableArray]?
+}
+
+/*
 struct AssetSparklineWSModel: Codable {
   let event: String
   let data: [[Datum]]
@@ -38,6 +43,7 @@ enum Datum: Codable {
     }
   }
 }
+*/
 
 //class AssetSparklineWSModel {
 //  var datum: [NSMutableArray]?

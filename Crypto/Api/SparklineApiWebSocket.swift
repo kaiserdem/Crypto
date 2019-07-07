@@ -12,7 +12,7 @@ class SparklineApiWebSocket: NSObject {
   
   static let sharedInstance = SparklineApiWebSocket()
   
-  func fetchWebSocketSparkline(completion: @escaping ([[Datum]]?) -> ()) {
+  func fetchWebSocketSparkline(completion: @escaping (AssetSparklineWSModel?) -> ()) {
     
     let ws = WebSocket("wss://demo.cryptto.io:8777")
     
@@ -38,23 +38,13 @@ class SparklineApiWebSocket: NSObject {
         
         switch someJsonModel?.event {
         case "asset-sparkline":
-          // print("\n asset-sparkline_Json")
-          let jsonSparkline = try JSONDecoder().decode(AssetSparklineWSModel.self, from: data!)
-          completion(jsonSparkline.data)
+          let jsonAssetsPrice = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject]
+          let pricesArray = jsonAssetsPrice["data"] as? [NSMutableArray]
+          var itemSparklineWSModel = AssetSparklineWSModel()
+          itemSparklineWSModel.data = pricesArray
+          completion(itemSparklineWSModel)
         default: return
-          //print("\n unsupported_Json")
         }
-        //        switch someJsonModel?.event {
-        //        case  "asset-sparkline" :
-        //          print("\n asset-sparkline_Json")
-        //          let jsonAssetsSparkline = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject]
-        //          let datumArray = jsonAssetsSparkline["data"] as? [NSMutableArray]
-        //          let assetSparklineWSModel = AssetSparklineWSModel()
-        //          assetSparklineWSModel.datum = datumArray
-        //          completion(assetSparklineWSModel)
-        //        default:
-        //          print("unsupported_Json")
-        //        }
       } catch let error {
         print(error)
       }

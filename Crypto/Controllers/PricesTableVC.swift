@@ -13,31 +13,45 @@ class PricesTableVC: UITableViewController {
   var assetsModel: [Assets] = []
   var assetsWatchlist: [Assets] = []
   var sendAssets: [Assets] = []
-  var data: [Datum] = []
+  var dataItem: AssetSparklineWSModel?
+  var dataArrayEmpty: [NSMutableArray] = []
   
   var imageDictionary = ["bitcoin": UIImage(named: "bitcoin"),
-                         "eos": UIImage(named: "eos"),
-                         "cosmos": UIImage(named: "cosmos"),
                          "ethereum": UIImage(named: "ethereum"),
-                         "binance-coin": UIImage(named: "binance-coin"),
                          "ripple": UIImage(named: "ripple"),
-                         "dash": UIImage(named: "dash"),
-                         "bitcoin-sv": UIImage(named: "bitcoin-sv"),
-                         "tether": UIImage(named: "tether"),
-                         "tron": UIImage(named: "tron"),
-                         "cardano": UIImage(named: "cardano"),
+                         "litecoin": UIImage(named: "litecoin"),
                          "bitcoin-cash": UIImage(named: "bitcoin-cash"),
+                         "eos": UIImage(named: "eos"),
+                         "binance-coin": UIImage(named: "binance-coin"),
+                         "tether": UIImage(named: "tether"),
+                         "bitcoin-sv": UIImage(named: "bitcoin-sv"),
+                         "tron": UIImage(named: "tron"),
+                         "stellar": UIImage(named: "stellar"),
+                         "cardano": UIImage(named: "cardano"),
                          "monero": UIImage(named: "monero"),
+                         "dash": UIImage(named: "dash"),
+                         "cosmos": UIImage(named: "cosmos"),
+                         "chainlink": UIImage(named: "chainlink"),
                          "neo": UIImage(named: "neo"),
                          "iota": UIImage(named: "iota"),
-                         "litecoin": UIImage(named: "litecoin"),
                          "ethereum-classic": UIImage(named: "ethereum-classic")]
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    fetchSparklineData()
   }
-
+  
+  func fetchSparklineData() {
+    SparklineApiWebSocket.sharedInstance.fetchWebSocketSparkline { [weak self] (dataSparklineArray: AssetSparklineWSModel?) in
+      guard let  strongSelf = self else  { return }
+      strongSelf.dataItem = dataSparklineArray
+      
+    //  for i1 in (dataSparklineArray?.data ?? self!.dataArrayEmpty) {
+        
+    //  }
+    }
+  }
+  
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 54
   }
@@ -45,15 +59,24 @@ class PricesTableVC: UITableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return assetsModel.count
   }
- 
+  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! PricesTableViewCell
     let tableAssets = assetsModel[indexPath.row]
     let id  = tableAssets.id
+    if (dataItem?.data) != nil {
+      for i in (dataItem?.data)! {
+        if (i[0] as! String) == id {
+          cell.setLineChart(values: i[2] as! [Double])
+        }
+        
+      }
+    }
+
+    
     for (key, value) in imageDictionary {
       if key == id {
         cell.iconImageViewOutlet.image = value
-       // print(" \(key) -> \(String(describing: tableAssets.id))")
       }
     }
     cell.tableAssets = tableAssets
@@ -62,7 +85,6 @@ class PricesTableVC: UITableViewController {
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     self.sendAssets = [assetsModel[indexPath.row]]
-    
     performSegue(withIdentifier: "detailSegueId", sender: self)
   }
   
