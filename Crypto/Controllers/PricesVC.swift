@@ -172,7 +172,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     backBarCornerView.layer.cornerRadius = 8
     watchlistCustButOutlet.layer.cornerRadius = 6
     
-    allCountAssetsLabel.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+    allCountAssetsLabel.backgroundColor = #colorLiteral(red: 0.6, green: 0.6, blue: 0.6, alpha: 1)
     allCountAssetsLabel.layer.cornerRadius = 8
     
     allCustButOutlet.layer.cornerRadius = 6

@@ -17,6 +17,9 @@
 		AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */; };
 		AD2C8F2A22BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */; };
 		AD2C8F2E22C0D74800BCEA14 /* CoinInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C8F2D22C0D74800BCEA14 /* CoinInfoVC.swift */; };
+		AD36711022D8FEFB00649258 /* MTSlideToOpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36710F22D8FEFB00649258 /* MTSlideToOpenView.swift */; };
+		AD36711222D908B900649258 /* BuyTradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36711122D908B900649258 /* BuyTradeVC.swift */; };
+		AD36711422D908D500649258 /* SellTradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36711322D908D500649258 /* SellTradeVC.swift */; };
 		AD38A08322BD325E00F13835 /* PricesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */; };
 		AD5C30BA22C65AB0009DEE4C /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */; };
 		AD5F157322BBDCB0008AC2F4 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */; };
@@ -61,6 +64,9 @@
 		AD2C8F2722BF6AE100BCEA14 /* SparklineApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineApiWebSocket.swift; sourceTree = "<group>"; };
 		AD2C8F2922BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPriceApiWebSocket.swift; sourceTree = "<group>"; };
 		AD2C8F2D22C0D74800BCEA14 /* CoinInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoVC.swift; sourceTree = "<group>"; };
+		AD36710F22D8FEFB00649258 /* MTSlideToOpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSlideToOpenView.swift; sourceTree = "<group>"; };
+		AD36711122D908B900649258 /* BuyTradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTradeVC.swift; sourceTree = "<group>"; };
+		AD36711322D908D500649258 /* SellTradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTradeVC.swift; sourceTree = "<group>"; };
 		AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesTableViewCell.swift; sourceTree = "<group>"; };
 		AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
 		AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				AD2992DA22B8E8E200AD1A3A /* Main.storyboard */,
 				AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */,
 				ADD0D98222C9EB61003A58C0 /* CoinInfoTableViewCell.swift */,
+				AD36710F22D8FEFB00649258 /* MTSlideToOpenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +225,8 @@
 				ADF418C122BB8D1E008C4D5C /* SettingVC.swift */,
 				AD2C8F2D22C0D74800BCEA14 /* CoinInfoVC.swift */,
 				ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */,
+				AD36711122D908B900649258 /* BuyTradeVC.swift */,
+				AD36711322D908D500649258 /* SellTradeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 				ADF418CB22BBB1A7008C4D5C /* AssetPriceWSModel.swift in Sources */,
 				AD38A08322BD325E00F13835 /* PricesTableViewCell.swift in Sources */,
 				AD2C8F2E22C0D74800BCEA14 /* CoinInfoVC.swift in Sources */,
+				AD36711222D908B900649258 /* BuyTradeVC.swift in Sources */,
 				AD2992ED22BA61A300AD1A3A /* TradeVC.swift in Sources */,
 				ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */,
 				AD2992E922B904FD00AD1A3A /* PricesTableVC.swift in Sources */,
@@ -376,6 +386,8 @@
 				ADF418CF22BBB24C008C4D5C /* ExtensionRoundedDouble.swift in Sources */,
 				AD2992D722B8E8E200AD1A3A /* AppDelegate.swift in Sources */,
 				AD5F158322BBE0BE008AC2F4 /* AssetsApiWebSocket.swift in Sources */,
+				AD36711422D908D500649258 /* SellTradeVC.swift in Sources */,
+				AD36711022D8FEFB00649258 /* MTSlideToOpenView.swift in Sources */,
 				AD5F157322BBDCB0008AC2F4 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

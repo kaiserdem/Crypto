@@ -163,8 +163,6 @@ class CoinInfoVC: UIViewController {
   }
   func fetchSparklineItem() {
 
-
-
     var itemId = ""
     for i in acceptAssets {
       itemId = i.id!
@@ -378,6 +376,9 @@ class CoinInfoVC: UIViewController {
     lineChartView.leftAxis.enabled = false
     lineChartView.rightAxis.enabled = false
     lineChartView.xAxis.drawLabelsEnabled = false
+    lineChartView.noDataText = "dsfvdsv"
+    lineChartView.noDataTextColor = UIColor.blue
+    
   }
   
   func setupChartsBarGestures() {
