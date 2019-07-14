@@ -25,13 +25,17 @@ import UIKit
   }()
   public let textForButtonLabel: UILabel = {
     let label = UILabel()
-    label.backgroundColor = .blue
+    label.text = "Buy BTC"
+    label.textAlignment = NSTextAlignment.center
+    label.textColor = .white
+    label.font = UIFont(name:"Helvetica", size:14)
+
     return label
   }()
   public let thumnailImageView: UIImageView = {
     let view = MTRoundImageView()
     view.isUserInteractionEnabled = true
-    view.contentMode = .center
+//    view.contentMode = .center
     return view
   }()
   public let sliderHolderView: UIView = {
@@ -139,12 +143,12 @@ import UIKit
     draggedView.translatesAutoresizingMaskIntoConstraints = false
     textForButtonLabel.translatesAutoresizingMaskIntoConstraints = false
     
-    textForButtonLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-    textForButtonLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    textForButtonLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-    textForButtonLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    textForButtonLabel.trailingAnchor.constraint(equalTo: thumnailImageView.trailingAnchor).isActive = true
+    textForButtonLabel.centerYAnchor.constraint(equalTo: thumnailImageView.centerYAnchor).isActive = true
+    textForButtonLabel.leadingAnchor.constraint(equalTo: thumnailImageView.leadingAnchor).isActive = true
+    textForButtonLabel.centerXAnchor.constraint(equalTo: thumnailImageView.centerXAnchor).isActive = true
     
-    // Setup for view
+    // Setup for view длинна всего вю
     view.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
     view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
@@ -156,10 +160,11 @@ import UIKit
     
     topThumbnailViewConstraint = thumnailImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0)
     topThumbnailViewConstraint?.isActive = true
-    thumnailImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    thumnailImageView.heightAnchor.constraint(equalTo: thumnailImageView.widthAnchor).isActive = true
     
-    // Setup for slider holder view
+    thumnailImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    thumnailImageView.heightAnchor.constraint(equalTo: thumnailImageView.widthAnchor, constant: -55).isActive = true // ширена кнопки
+    
+    // Setup for slider holder view - Настройка для просмотра держателя слайдера
     topSliderConstraint = sliderHolderView.topAnchor.constraint(equalTo: view.topAnchor, constant: sliderViewTopDistance)
     topSliderConstraint?.isActive = true
     sliderHolderView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
@@ -169,7 +174,7 @@ import UIKit
     // Setup for textLabel
     textLabel.topAnchor.constraint(equalTo: sliderHolderView.topAnchor).isActive = true
     textLabel.centerYAnchor.constraint(equalTo: sliderHolderView.centerYAnchor).isActive = true
-    leadingTextLabelConstraint = textLabel.leadingAnchor.constraint(equalTo: sliderHolderView.leadingAnchor, constant: 0)
+    leadingTextLabelConstraint = textLabel.leadingAnchor.constraint(equalTo: sliderHolderView.leadingAnchor, constant: 60)
     leadingTextLabelConstraint?.isActive = true
     textLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat(-8)).isActive = true
     

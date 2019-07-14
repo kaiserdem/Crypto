@@ -27,8 +27,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
   var pricesArrayEmpty: [NSMutableArray] = []
   var assetsArrayEmpty: [Assets] = []
   var watchlistArray: [Assets] = []
-//  var dataItem: AssetSparklineWSModel?
-//  var dataArrayEmpty: [NSMutableArray] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,7 +35,6 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     setupTopBarSettings()
     fetchAssetsResours()
     fetchAssets()
-    //fetchSparklineData()
     offlineBarButton.tintColor = .white
   }
  
@@ -79,16 +76,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     }
   }
   
-//  func fetchSparklineData() {
-//    SparklineApiWebSocket.sharedInstance.fetchWebSocketSparkline { [weak self] (dataSparklineArray: AssetSparklineWSModel?) in
-//      guard let  strongSelf = self else  { return }
-//      strongSelf.dataItem = dataSparklineArray
-//      
-//      for i1 in (dataSparklineArray?.data ?? self!.dataArrayEmpty) {
-//        
-//      }
-//    }
-//  }
+
   func fetchAssetsResours() {
     ApiForResource.sharedInstance.fetchAssetsResource { [weak self] (assetsArray: [Assets]?) in
       guard let strongSelf = self else { return }

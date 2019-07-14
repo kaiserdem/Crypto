@@ -447,9 +447,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.164" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVy-K7-Y3d">
-                                                                <rect key="frame" x="20" y="30" width="55.5" height="21"/>
+                                                                <rect key="frame" x="20" y="30" width="65" height="21"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="55.5" id="h6Q-mu-W6q"/>
+                                                                    <constraint firstAttribute="width" constant="65" id="h6Q-mu-W6q"/>
                                                                     <constraint firstAttribute="height" constant="21" id="pTb-FH-5tS"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
@@ -457,7 +457,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-e1-Hw7">
-                                                                <rect key="frame" x="80.5" y="30" width="35" height="21"/>
+                                                                <rect key="frame" x="90" y="30" width="35" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="35" id="Bti-ge-ken"/>
                                                                     <constraint firstAttribute="height" constant="21" id="EeS-ay-fsw"/>
@@ -473,7 +473,7 @@
                                                                     <constraint firstAttribute="height" constant="125" id="BlC-hy-wb7"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-Br-Wxs">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-Br-Wxs">
                                                                 <rect key="frame" x="305" y="30" width="50" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="FUY-Vf-d9e"/>
@@ -483,7 +483,7 @@
                                                                 <color key="textColor" name="grayDark"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-fa-s1B">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-fa-s1B">
                                                                 <rect key="frame" x="305" y="186" width="50" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="22m-mz-kOx"/>
@@ -495,7 +495,7 @@
                                                                 <color key="textColor" name="grayDark"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-0d-bSU">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-0d-bSU" userLabel="BarViewTopBlack">
                                                                 <rect key="frame" x="20" y="207" width="335" height="1"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlH-s6-6I4">
@@ -651,13 +651,80 @@
                                                             <constraint firstItem="HJf-Kr-Ac5" firstAttribute="trailing" secondItem="w6F-t2-fRB" secondAttribute="trailing" id="xsX-6T-9v4"/>
                                                         </constraints>
                                                     </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Qr-Qf-xcj" userLabel="leftBorderView">
+                                                        <rect key="frame" x="245" y="0.0" width="1" height="52"/>
+                                                        <color key="backgroundColor" name="grayNormConditionForImage"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="1" id="ezV-rq-0sv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-73-64V" userLabel="rightBorderView">
+                                                        <rect key="frame" x="116" y="0.0" width="1" height="52"/>
+                                                        <color key="backgroundColor" name="grayNormConditionForImage"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="1" id="5yO-9Q-0VO"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-sJ-Eu8" userLabel="exchangeStackView">
+                                                        <rect key="frame" x="8" y="14" width="102.5" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin-sv" translatesAutoresizingMaskIntoConstraints="NO" id="CrI-J4-pHE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="25" id="XTK-WY-fJA"/>
+                                                                    <constraint firstAttribute="width" constant="25" id="lEQ-hX-qHF"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YoBit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-gp-1fk">
+                                                                <rect key="frame" x="32" y="0.0" width="39.5" height="25"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downBlack" translatesAutoresizingMaskIntoConstraints="NO" id="32I-7g-Qvt">
+                                                                <rect key="frame" x="78.5" y="0.0" width="24" height="25"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="12" id="oxA-vI-NPj"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mCZ-ym-U34" userLabel="currencyPairsStackView">
+                                                        <rect key="frame" x="122" y="14" width="122.5" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binance-coin" translatesAutoresizingMaskIntoConstraints="NO" id="v8j-47-yOF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="25" id="CgB-du-pNl"/>
+                                                                    <constraint firstAttribute="height" constant="25" id="ihi-TO-q5i"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTCUSD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbo-2Z-k2E">
+                                                                <rect key="frame" x="30" y="0.0" width="63.5" height="25"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Ym0-1G-8ZW">
+                                                                <rect key="frame" x="98.5" y="0.0" width="24" height="25"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" name="grayDoubleLight239"/>
                                                 <constraints>
                                                     <constraint firstItem="Zi1-tv-2Es" firstAttribute="leading" secondItem="w1s-yk-Ryl" secondAttribute="leading" id="4cr-ID-H5C"/>
+                                                    <constraint firstItem="9Qr-Qf-xcj" firstAttribute="top" secondItem="w1s-yk-Ryl" secondAttribute="top" id="A3P-C4-Qn0"/>
+                                                    <constraint firstItem="Zi1-tv-2Es" firstAttribute="top" secondItem="4cl-73-64V" secondAttribute="bottom" id="WOZ-u2-Ca5"/>
                                                     <constraint firstItem="Zi1-tv-2Es" firstAttribute="top" secondItem="w1s-yk-Ryl" secondAttribute="top" constant="52" id="bYy-vD-G1C"/>
                                                     <constraint firstAttribute="trailing" secondItem="Zi1-tv-2Es" secondAttribute="trailing" id="e7f-eW-uNk"/>
                                                     <constraint firstAttribute="bottom" secondItem="Zi1-tv-2Es" secondAttribute="bottom" id="gqQ-hl-AU9"/>
+                                                    <constraint firstItem="9Qr-Qf-xcj" firstAttribute="leading" secondItem="4cl-73-64V" secondAttribute="trailing" constant="128" id="sGz-Px-hws"/>
+                                                    <constraint firstItem="4cl-73-64V" firstAttribute="top" secondItem="w1s-yk-Ryl" secondAttribute="top" id="sMf-aV-jcy"/>
+                                                    <constraint firstItem="4cl-73-64V" firstAttribute="leading" secondItem="w1s-yk-Ryl" secondAttribute="leading" constant="116" id="wDl-sl-q40"/>
+                                                    <constraint firstItem="Zi1-tv-2Es" firstAttribute="top" secondItem="9Qr-Qf-xcj" secondAttribute="bottom" id="zpY-s9-Fks"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -704,6 +771,7 @@
                     <navigationItem key="navigationItem" title="Trade" id="8Az-CG-9Ct"/>
                     <connections>
                         <outlet property="backTopGrayView" destination="w1s-yk-Ryl" id="8Qu-eR-2wc"/>
+                        <outlet property="barViewTopBlack" destination="6hJ-0d-bSU" id="waJ-mk-2oA"/>
                         <outlet property="buttonViewBuyBTC" destination="xvj-Ht-Zl3" id="vif-cI-xeF"/>
                         <outlet property="buttonViewSellBTC" destination="XPa-oy-ym9" id="glg-wu-zcO"/>
                         <outlet property="buyConteinerView" destination="86z-zc-6wo" id="P3r-FN-a2B"/>
@@ -713,6 +781,7 @@
                         <outlet property="labelButtonBuyBTC" destination="86Q-7F-Cth" id="nKh-Nt-rsN"/>
                         <outlet property="lastPriceLabel" destination="fbV-LQ-NVU" id="Xx5-QE-DMH"/>
                         <outlet property="lineChartView" destination="CCT-gE-Tus" id="JcZ-7n-17b"/>
+                        <outlet property="mainViewBar" destination="fI1-p8-T98" id="TPC-eD-oNf"/>
                         <outlet property="maxPriceChartLabel" destination="ihF-Br-Wxs" id="pY7-yL-9KJ"/>
                         <outlet property="minPriceChartLabel" destination="p9j-fa-s1B" id="h2p-8U-DVK"/>
                         <outlet property="monthTextView" destination="1lv-YD-rst" id="ork-8G-nfK"/>
@@ -722,6 +791,7 @@
                         <outlet property="rightLabelUSD" destination="rbD-vQ-WY8" id="q5K-eb-Hmm"/>
                         <outlet property="secondGrayView" destination="XfR-cS-y2V" id="dwk-7U-ie0"/>
                         <outlet property="sellConteinerView" destination="eVq-9f-MOy" id="0fg-EZ-rrZ"/>
+                        <outlet property="usdLabel" destination="Pom-e1-Hw7" id="QuE-at-f2P"/>
                         <outlet property="weekTextView" destination="w6F-t2-fRB" id="jUl-j8-Bbk"/>
                         <outlet property="weekTopView" destination="HJf-Kr-Ac5" id="MYP-Ym-iwD"/>
                         <outlet property="whiteViewForChart" destination="Zi1-tv-2Es" id="TOK-RW-iD9"/>
@@ -1997,7 +2067,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fy-T9-jnL">
                                                 <rect key="frame" x="107" y="9.5" width="35" height="24"/>
@@ -2085,6 +2155,7 @@
                     </view>
                     <connections>
                         <outlet property="amountTextField" destination="9ad-Hb-4ln" id="qQH-qC-5Pv"/>
+                        <outlet property="backView" destination="vyc-bO-XCw" id="tvn-Vs-VLA"/>
                         <outlet property="buySlideButton" destination="Z6d-tg-xF0" id="k4O-wf-fkG"/>
                         <outlet property="labelInTextFieldView" destination="0Fy-T9-jnL" id="4We-74-grR"/>
                         <outlet property="maxButtonView" destination="udB-eO-voR" id="zaJ-5f-5OQ"/>
@@ -2100,8 +2171,11 @@
     </scenes>
     <resources>
         <image name="alert" width="64" height="64"/>
+        <image name="binance-coin" width="300" height="300"/>
         <image name="bitcoin" width="64" height="64"/>
+        <image name="bitcoin-sv" width="1055" height="943"/>
         <image name="cog" width="28" height="28"/>
+        <image name="downBlack" width="24" height="24"/>
         <image name="offline" width="40" height="40"/>
         <image name="portfolio" width="56" height="56"/>
         <image name="prices" width="56" height="56"/>
