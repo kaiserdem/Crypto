@@ -38,13 +38,33 @@ class LanguageVC: UIViewController {
   }
   @objc func englishButtonAction(sender: UIButton!) {
     print(" English Button tapped")
-    
+    self.changeToLanguage("en")
+
   }
   @objc func russianButtonAction(sender: UIButton!) {
     print(" Russian Button tapped")
-    
+    self.changeToLanguage("ru")
+
   }
-    
+  private func changeToLanguage(_ langCode: String) {
+    if Bundle.main.preferredLocalizations.first != langCode {
+      
+      let confirmAlertCtrl = UIAlertController(title: NSLocalizedString("restartTitle", comment: ""), message: NSLocalizedString("restart", comment: ""), preferredStyle: .alert)
+      
+      let confirmAction = UIAlertAction(title: NSLocalizedString("close", comment: ""), style: .destructive) { _ in
+        UserDefaults.standard.set([langCode], forKey: "AppleLanguages")
+        UserDefaults.standard.synchronize()
+        exit(EXIT_SUCCESS)
+      }
+      confirmAlertCtrl.addAction(confirmAction)
+      
+      let cancelAction = UIAlertAction(title: NSLocalizedString("cancel", comment: ""), style: .cancel, handler: nil)
+      confirmAlertCtrl.addAction(cancelAction)
+      
+      present(confirmAlertCtrl, animated: true, completion: nil)
+    }
+  }
+
 
   
 
