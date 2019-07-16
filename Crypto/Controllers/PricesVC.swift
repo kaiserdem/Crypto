@@ -88,7 +88,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       self.watchlistCustButOutlet.backgroundColor = .white
       self.watchlistCustButOutlet.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
       self.watchlistCustButOutlet.layer.shadowRadius = 1.5
-      self.watchlistCustButOutlet.layer.shadowOpacity = 0.1
+      self.watchlistCustButOutlet.layer.shadowOpacity = 0.2
       
       self.allCustButOutlet.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1)
       self.allCustButOutlet.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
@@ -107,7 +107,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       self.allCustButOutlet.backgroundColor = .white
       self.allCustButOutlet.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
       self.allCustButOutlet.layer.shadowRadius = 1.5
-      self.allCustButOutlet.layer.shadowOpacity = 0.1
+      self.allCustButOutlet.layer.shadowOpacity = 0.2
       
       self.watchlistCustButOutlet.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1)
       self.watchlistCustButOutlet.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
@@ -166,7 +166,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
     allCustButOutlet.layer.cornerRadius = 6
     allCustButOutlet.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
     allCustButOutlet.layer.shadowRadius = 1.5
-    allCustButOutlet.layer.shadowOpacity = 0.1
+    allCustButOutlet.layer.shadowOpacity = 0.2
     
     let allGesture = UITapGestureRecognizer(target: self, action:  #selector (allBtnAction (_:)))
     let watchlistGesture = UITapGestureRecognizer(target: self, action:  #selector (watchlistBtnAction (_:)))

@@ -21,6 +21,7 @@
 		AD36711222D908B900649258 /* BuyTradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36711122D908B900649258 /* BuyTradeVC.swift */; };
 		AD36711422D908D500649258 /* SellTradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36711322D908D500649258 /* SellTradeVC.swift */; };
 		AD38A08322BD325E00F13835 /* PricesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */; };
+		AD4BECD322DDED6700D64A36 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BECD222DDED6700D64A36 /* LanguageVC.swift */; };
 		AD5C30BA22C65AB0009DEE4C /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */; };
 		AD5F157322BBDCB0008AC2F4 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */; };
 		AD5F157B22BBDE41008AC2F4 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */; };
@@ -68,6 +69,7 @@
 		AD36711122D908B900649258 /* BuyTradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTradeVC.swift; sourceTree = "<group>"; };
 		AD36711322D908D500649258 /* SellTradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellTradeVC.swift; sourceTree = "<group>"; };
 		AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesTableViewCell.swift; sourceTree = "<group>"; };
+		AD4BECD222DDED6700D64A36 /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
 		AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -227,6 +229,7 @@
 				ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */,
 				AD36711122D908B900649258 /* BuyTradeVC.swift */,
 				AD36711322D908D500649258 /* SellTradeVC.swift */,
+				AD4BECD222DDED6700D64A36 /* LanguageVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				AD2992D922B8E8E200AD1A3A /* PricesVC.swift in Sources */,
 				ADF418CD22BBB1C5008C4D5C /* AssetSparklineWSModel.swift in Sources */,
 				ADF418C522BBB127008C4D5C /* ParsAllJsonModel.swift in Sources */,
+				AD4BECD322DDED6700D64A36 /* LanguageVC.swift in Sources */,
 				AD5C30BA22C65AB0009DEE4C /* ExtensionButton.swift in Sources */,
 				ADF418CF22BBB24C008C4D5C /* ExtensionRoundedDouble.swift in Sources */,
 				AD2992D722B8E8E200AD1A3A /* AppDelegate.swift in Sources */,

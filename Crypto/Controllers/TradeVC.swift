@@ -99,9 +99,10 @@ class TradeVC: UIViewController {
     titleLabel.text = "Trade"
     titleLabel.textColor = UIColor.white
     titleLabel.font = UIFont(name:"Helvetica", size:21)
-    
+    navigationItem.titleView = titleLabel
     navigationController?.navigationBar.setGradientBackground(colors: colors)
   }
+  
   func closeButtonViewBuyBTC() {
     self.buttonViewBuyBTC.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
     self.buttonViewBuyBTC.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
@@ -112,13 +113,13 @@ class TradeVC: UIViewController {
     self.buttonViewBuyBTC.backgroundColor = .white
     self.buttonViewBuyBTC.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
     self.buttonViewBuyBTC.layer.shadowRadius = 1.5
-    self.buttonViewBuyBTC.layer.shadowOpacity = 0.1
+    self.buttonViewBuyBTC.layer.shadowOpacity = 0.2
   }
   func openButtonViewSellBTC() {
     self.buttonViewSellBTC.backgroundColor = .white
     self.buttonViewSellBTC.layer.shadowOffset = CGSize(width: 0.5, height: -1.0)
     self.buttonViewSellBTC.layer.shadowRadius = 1.5
-    self.buttonViewSellBTC.layer.shadowOpacity = 0.1
+    self.buttonViewSellBTC.layer.shadowOpacity = 0.2
   }
   func closeButtonViewSellBTC() {
     self.buttonViewSellBTC.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
