@@ -47,7 +47,7 @@
                                                 <rect key="frame" x="139" y="8" width="85" height="51"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1515" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-m2-NBr">
-                                                        <rect key="frame" x="50" y="15" width="34" height="16"/>
+                                                        <rect key="frame" x="39" y="15" width="34" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="XJo-ce-xBA"/>
                                                             <constraint firstAttribute="width" constant="34" id="elW-C7-rNs"/>
@@ -57,7 +57,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPj-1U-rFf">
-                                                        <rect key="frame" x="1" y="14" width="48" height="18.5"/>
+                                                        <rect key="frame" x="20" y="14" width="18" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -65,11 +65,11 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="fMS-m2-NBr" secondAttribute="trailing" constant="1" id="06k-s6-cuw"/>
                                                     <constraint firstItem="fMS-m2-NBr" firstAttribute="leading" secondItem="SPj-1U-rFf" secondAttribute="trailing" constant="1" id="32J-q7-5uE"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="BEo-fo-9pe"/>
                                                     <constraint firstAttribute="height" constant="51" id="CPe-nc-Q3x"/>
-                                                    <constraint firstItem="SPj-1U-rFf" firstAttribute="leading" secondItem="aOg-zc-7PE" secondAttribute="leading" constant="1" id="XMt-sS-9v8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fMS-m2-NBr" secondAttribute="trailing" priority="250" constant="1" id="IH9-EN-br2"/>
+                                                    <constraint firstItem="SPj-1U-rFf" firstAttribute="leading" secondItem="aOg-zc-7PE" secondAttribute="leading" priority="750" constant="20" id="XMt-sS-9v8"/>
                                                     <constraint firstItem="SPj-1U-rFf" firstAttribute="top" secondItem="aOg-zc-7PE" secondAttribute="top" constant="14" id="gOj-dZ-d8g"/>
                                                     <constraint firstItem="fMS-m2-NBr" firstAttribute="top" secondItem="aOg-zc-7PE" secondAttribute="top" constant="15" id="ye4-IR-r63"/>
                                                 </constraints>
