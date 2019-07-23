@@ -157,7 +157,7 @@ class CoinInfoVC: UIViewController {
       } else {
         progressViewBack.isHidden = true
         topProgresView.isHidden = true
-        maxSupplyLabel.text = "Unlimited"
+        maxSupplyLabel.text = NSLocalizedString("Unlimited", comment: "Unlimited")
       }
     }
   }
@@ -328,7 +328,7 @@ class CoinInfoVC: UIViewController {
   }
   private func setupNavBarSettings() {
     let titleLabel = UILabel(frame: CGRect(x: view.center.x, y: view.center.y, width: 0, height:0))
-    titleLabel.text = "Coin Info"
+    titleLabel.text = NSLocalizedString("Coin Info", comment: "Coin Info")
     titleLabel.textColor = UIColor.white
     titleLabel.font = UIFont(name:"Helvetica", size:21)
     

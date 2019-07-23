@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Crypto
+
+  Created by Kaiserdem on 16.07.2019.
+  Copyright © 2019 Kaiserdem. All rights reserved.
+*/
+"restart" = "In order to change the language, the Apple must be closed and reopend bu you.";
+"restartTitle" = "Apple restart required";
+"cancel" = "Cancel";
+"close" = "Close now";

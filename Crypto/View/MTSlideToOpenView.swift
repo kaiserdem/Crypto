@@ -25,7 +25,7 @@ import UIKit
   }()
   public let textForButtonLabel: UILabel = {
     let label = UILabel()
-    label.text = "Buy BTC"
+    label.text = NSLocalizedString("Buy BTC", comment: "Buy BTC")
     label.textAlignment = NSTextAlignment.center
     label.textColor = .white
     label.font = UIFont(name:"Helvetica", size:14)
@@ -178,8 +178,6 @@ import UIKit
     leadingTextLabelConstraint?.isActive = true
     textLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat(-8)).isActive = true
     
-    
-    
     // Setup for sliderTextLabel
     sliderTextLabel.topAnchor.constraint(equalTo: textLabel.topAnchor).isActive = true
     sliderTextLabel.centerYAnchor.constraint(equalTo: textLabel.centerYAnchor).isActive = true
@@ -276,7 +274,6 @@ import UIKit
     }
   }
 }
-
 
 class MTRoundImageView: UIImageView {
   override func layoutSubviews() {

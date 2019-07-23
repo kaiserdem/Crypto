@@ -79,6 +79,5 @@ class PricesTableViewCell: UITableViewCell {
     lineChartView.leftAxis.enabled = false
     lineChartView.rightAxis.enabled = false
     lineChartView.xAxis.drawLabelsEnabled = false
-    
   }
 }

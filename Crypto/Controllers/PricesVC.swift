@@ -11,6 +11,7 @@ import Charts
 
 class PricesVC: UIViewController, UITextFieldDelegate {
   
+  @IBOutlet weak var widthView: NSLayoutConstraint!
   @IBOutlet weak var offlineBarButton: UIBarButtonItem!
   @IBOutlet weak var allCountAssetsLabel: UILabel!
   @IBOutlet weak var contentViewOutlet: UIView!
@@ -75,6 +76,16 @@ class PricesVC: UIViewController, UITextFieldDelegate {
       }
     }
   }
+  
+//  func calculatewidth() {
+//
+//
+//
+//    if (self.all?.characters.count)! >= currrentCountText {
+//
+//    }
+//  }
+
   
 
   func fetchAssetsResours() {
@@ -144,7 +155,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
   private func setupNavBarSettings() {
     let colors: [UIColor] = [#colorLiteral(red: 0, green: 0.7960784314, blue: 0.7921568627, alpha: 1), #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)]
     let titleLabel = UILabel(frame: CGRect(x: view.center.x, y: view.center.y, width: 0, height:0))
-    titleLabel.text = "Market Prices"
+    titleLabel.text = NSLocalizedString("Market Prices", comment: "Market Prices")
     titleLabel.textColor = UIColor.white
     titleLabel.font = UIFont(name:"Helvetica", size:21)
     

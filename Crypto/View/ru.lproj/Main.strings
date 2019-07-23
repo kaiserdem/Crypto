@@ -1,0 +1,249 @@
+/* Class = "UILabel"; text = "Watchlist"; ObjectID = "0A2-hW-Aqj"; */
+"0A2-hW-Aqj.text" = "Избранное";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "0Fy-T9-jnL"; */
+"0Fy-T9-jnL.text" = "BTC";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "0VZ-Uf-HPV"; */
+"0VZ-Uf-HPV.text" = "1";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "3zz-H0-XqW"; */
+"3zz-H0-XqW.placeholder" = "Поиск";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "5x2-T7-MgB"; */
+"5x2-T7-MgB.text" = "BTC";
+
+/* Class = "UILabel"; text = "Circulating supply:"; ObjectID = "7u9-vG-j0j"; */
+"7u9-vG-j0j.text" = "В обороте:";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "9ad-Hb-4ln"; */
+"9ad-Hb-4ln.placeholder" = "0";
+
+/* Class = "UILabel"; text = "KRW"; ObjectID = "9rn-ec-lcJ"; */
+"9rn-ec-lcJ.text" = "KRW";
+
+/* Class = "UILabel"; text = "EUR"; ObjectID = "23Z-kJ-5eM"; */
+"23Z-kJ-5eM.text" = "EUR";
+
+/* Class = "UILabel"; text = "Buy BTC"; ObjectID = "86Q-7F-Cth"; */
+"86Q-7F-Cth.text" = "Купить BTC";
+
+/* Class = "UILabel"; text = "Year"; ObjectID = "89a-PZ-WiT"; */
+"89a-PZ-WiT.text" = "Год";
+
+/* Class = "UILabel"; text = "User Account"; ObjectID = "AFd-lI-rdr"; */
+"AFd-lI-rdr.text" = "Аккаунт пользователя";
+
+/* Class = "UITabBarItem"; title = "Prices"; ObjectID = "AJ8-qi-OWy"; */
+"AJ8-qi-OWy.title" = "Цены";
+
+/* Class = "UILabel"; text = "Amount:"; ObjectID = "aOk-wV-sBN"; */
+"aOk-wV-sBN.text" = "Количество:";
+
+/* Class = "UILabel"; text = "Exchanges"; ObjectID = "B7v-0B-PeA"; */
+"B7v-0B-PeA.text" = "Биржы";
+
+/* Class = "UILabel"; text = "You get:"; ObjectID = "Bag-Io-ZWZ"; */
+"Bag-Io-ZWZ.text" = "Получите:";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "Bcw-qH-WFv"; */
+"Bcw-qH-WFv.text" = "USD";
+
+/* Class = "UILabel"; text = "Trade"; ObjectID = "BER-Or-3Vl"; */
+"BER-Or-3Vl.text" = "Торговля";
+
+/* Class = "UILabel"; text = "Alert"; ObjectID = "bP9-Ek-fdr"; */
+"bP9-Ek-fdr.text" = "Уведомления";
+
+/* Class = "UILabel"; text = "Day"; ObjectID = "c8A-gA-vLs"; */
+"c8A-gA-vLs.text" = "День";
+
+/* Class = "UILabel"; text = "Watchlist"; ObjectID = "ceN-Ie-ID6"; */
+"ceN-Ie-ID6.text" = "Избранное";
+
+/* Class = "UILabel"; text = "Rank"; ObjectID = "CHa-Qk-mC3"; */
+"CHa-Qk-mC3.text" = "Позиция";
+
+/* Class = "UITabBarItem"; title = "Portfolio"; ObjectID = "CVk-Q6-Xz9"; */
+"CVk-Q6-Xz9.title" = "Портфель";
+
+/* Class = "UILabel"; text = "Market Cap:"; ObjectID = "db6-qf-B5q"; */
+"db6-qf-B5q.text" = "Капитализация:";
+
+/* Class = "UILabel"; text = "General"; ObjectID = "Dhh-k4-NL4"; */
+"Dhh-k4-NL4.text" = "Общие";
+
+/* Class = "UILabel"; text = "10,950"; ObjectID = "dOw-cN-eDm"; */
+"dOw-cN-eDm.text" = "10,950";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "dUb-0T-CyA"; */
+"dUb-0T-CyA.text" = "Английский";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "efV-oq-l1C"; */
+"efV-oq-l1C.text" = "Цены:";
+
+/* Class = "UILabel"; text = "Week"; ObjectID = "eYp-gF-a5R"; */
+"eYp-gF-a5R.text" = "Неделя";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "fAS-vE-rw5"; */
+"fAS-vE-rw5.title" = "Настройки";
+
+/* Class = "UILabel"; text = "Last Bitcoin price"; ObjectID = "fbV-LQ-NVU"; */
+"fbV-LQ-NVU.text" = "Последняя цена Bitcoin";
+
+/* Class = "UILabel"; text = "Select Language"; ObjectID = "FkG-B6-7BB"; */
+"FkG-B6-7BB.text" = "Выбрать язык";
+
+/* Class = "UILabel"; text = "0 USD"; ObjectID = "FlZ-T0-xYw"; */
+"FlZ-T0-xYw.text" = "0 USD";
+
+/* Class = "UILabel"; text = "1515"; ObjectID = "fMS-m2-NBr"; */
+"fMS-m2-NBr.text" = "1515";
+
+/* Class = "UILabel"; text = "Amount:"; ObjectID = "FOJ-lX-C3L"; */
+"FOJ-lX-C3L.text" = "Количество:";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "Fwp-Oh-Mbv"; */
+"Fwp-Oh-Mbv.placeholder" = "0";
+
+/* Class = "UILabel"; text = "0 USD"; ObjectID = "Ha8-Jk-ipv"; */
+"Ha8-Jk-ipv.text" = "0 USD";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "HrR-CT-IMW"; */
+"HrR-CT-IMW.title" = "Елемент";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "I8A-RN-oOn"; */
+"I8A-RN-oOn.text" = "Ярлык";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ihF-Br-Wxs"; */
+"ihF-Br-Wxs.text" = "0";
+
+/* Class = "UILabel"; text = "BTCUSD"; ObjectID = "kbo-2Z-k2E"; */
+"kbo-2Z-k2E.text" = "BTCUSD";
+
+/* Class = "UILabel"; text = "some@gmail.com"; ObjectID = "Kek-0D-VXK"; */
+"Kek-0D-VXK.text" = "some@gmail.com";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "ki6-76-qd4"; */
+"ki6-76-qd4.text" = "Цены:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Lc4-gv-mxR"; */
+"Lc4-gv-mxR.text" = "Ярлык";
+
+/* Class = "UILabel"; text = "2 Years"; ObjectID = "Llr-4q-v8Q"; */
+"Llr-4q-v8Q.text" = "2 Года";
+
+/* Class = "UILabel"; text = "Week"; ObjectID = "LOL-Sk-YzO"; */
+"LOL-Sk-YzO.text" = "Неделя";
+
+/* Class = "UILabel"; text = "12.061"; ObjectID = "nXQ-In-oN3"; */
+"nXQ-In-oN3.text" = "12.061";
+
+/* Class = "UILabel"; text = "Price Comparison"; ObjectID = "ObU-g6-MQ0"; */
+"ObU-g6-MQ0.text" = "Сравнение цен";
+
+/* Class = "UILabel"; text = "$8.2B"; ObjectID = "ouW-oj-vJM"; */
+"ouW-oj-vJM.text" = "$8.2B";
+
+/* Class = "UILabel"; text = "21M BTC"; ObjectID = "OZM-se-Mi7"; */
+"OZM-se-Mi7.text" = "21M BTC";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "p9j-fa-s1B"; */
+"p9j-fa-s1B.text" = "0";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "Pom-e1-Hw7"; */
+"Pom-e1-Hw7.text" = "USD";
+
+/* Class = "UILabel"; text = "change"; ObjectID = "px5-JL-q7H"; */
+"px5-JL-q7H.text" = "менять";
+
+/* Class = "UILabel"; text = "Sell BTC"; ObjectID = "q4W-TP-9yM"; */
+"q4W-TP-9yM.text" = "Продать BTC";
+
+/* Class = "UILabel"; text = "3.76%"; ObjectID = "q5S-HU-e4H"; */
+"q5S-HU-e4H.text" = "3.76%";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "qMM-xe-x4d"; */
+"qMM-xe-x4d.text" = "BTC";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QQp-2q-kFk"; */
+"QQp-2q-kFk.text" = "Ярлык";
+
+/* Class = "UILabel"; text = "-USD"; ObjectID = "rbD-vQ-WY8"; */
+"rbD-vQ-WY8.text" = "-USD";
+
+/* Class = "UILabel"; text = "Bitcoin"; ObjectID = "RHQ-ib-ByY"; */
+"RHQ-ib-ByY.text" = "Bitcoin";
+
+/* Class = "UILabel"; text = "10.3"; ObjectID = "see-xY-kxQ"; */
+"see-xY-kxQ.text" = "10.3";
+
+/* Class = "UILabel"; text = "Max"; ObjectID = "SHY-EM-Hzs"; */
+"SHY-EM-Hzs.text" = "Макс";
+
+/* Class = "UILabel"; text = "You pay:"; ObjectID = "sNM-aD-ttM"; */
+"sNM-aD-ttM.text" = "Заплатите:";
+
+/* Class = "UILabel"; text = "All"; ObjectID = "SPj-1U-rFf"; */
+"SPj-1U-rFf.text" = "Все";
+
+/* Class = "UINavigationItem"; title = "Portfolio"; ObjectID = "sqd-II-65L"; */
+"sqd-II-65L.title" = "Портфель";
+
+/* Class = "UILabel"; text = "Month"; ObjectID = "svy-26-d8M"; */
+"svy-26-d8M.text" = "Месяц";
+
+/* Class = "UILabel"; text = "Max"; ObjectID = "t3A-EO-dzc"; */
+"t3A-EO-dzc.text" = "Maкс";
+
+/* Class = "UILabel"; text = "Year"; ObjectID = "tGr-dc-gNw"; */
+"tGr-dc-gNw.text" = "Год";
+
+/* Class = "UILabel"; text = "17.8M BTC"; ObjectID = "TGX-wX-7Fo"; */
+"TGX-wX-7Fo.text" = "17.8M BTC";
+
+/* Class = "UILabel"; text = "Day"; ObjectID = "Tpb-y1-NsU"; */
+"Tpb-y1-NsU.text" = "День";
+
+/* Class = "UILabel"; text = "12.061"; ObjectID = "TrU-Xw-A7Z"; */
+"TrU-Xw-A7Z.text" = "12.061";
+
+/* Class = "UITabBarItem"; title = "Trade"; ObjectID = "u7Y-0k-xWB"; */
+"u7Y-0k-xWB.title" = "Торговля";
+
+/* Class = "UILabel"; text = "Total supply:"; ObjectID = "UgC-VK-Xp0"; */
+"UgC-VK-Xp0.text" = "Макс. эмиссия:";
+
+/* Class = "UILabel"; text = "Alerts"; ObjectID = "uLY-tp-G74"; */
+"uLY-tp-G74.text" = "Уведомления";
+
+/* Class = "UILabel"; text = "Month"; ObjectID = "V5t-fl-N0C"; */
+"V5t-fl-N0C.text" = "Месяц";
+
+/* Class = "UILabel"; text = "$202.7B"; ObjectID = "vKB-Qj-tDW"; */
+"vKB-Qj-tDW.text" = "$202.7B";
+
+/* Class = "UILabel"; text = "12.164"; ObjectID = "wVy-K7-Y3d"; */
+"wVy-K7-Y3d.text" = "12.164";
+
+/* Class = "UILabel"; text = "Volume 24h:"; ObjectID = "Xc7-Bw-cnb"; */
+"Xc7-Bw-cnb.text" = "Обьем 24ч:";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "xNc-Uv-xMV"; */
+"xNc-Uv-xMV.text" = "BTC";
+
+/* Class = "UILabel"; text = "YoBit"; ObjectID = "XSS-gp-1fk"; */
+"XSS-gp-1fk.text" = "YoBit";
+
+/* Class = "UILabel"; text = "- BTC"; ObjectID = "Y99-Df-aXP"; */
+"Y99-Df-aXP.text" = "- BTC";
+
+/* Class = "UILabel"; text = "Titel"; ObjectID = "z3x-ez-gMt"; */
+"z3x-ez-gMt.text" = "Titel";
+
+/* Class = "UILabel"; text = "App Settings"; ObjectID = "zGl-pz-sfc"; */
+"zGl-pz-sfc.text" = "Настройки приложения";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "zvj-1F-z74"; */
+"zvj-1F-z74.text" = "цена";
+

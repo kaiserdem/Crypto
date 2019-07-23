@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Crypto/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="es">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Crypto/en.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="es">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="Buy BTC">
+        <source>Buy BTC</source>
+        <target>Comprar BTC</target>
+        <note>Buy BTC</note>
+      </trans-unit>
+      <trans-unit id="Buy!">
+        <source>Buy!</source>
+        <target>Comprar!</target>
+        <note>Buy</note>
+      </trans-unit>
+      <trans-unit id="Coin Info">
+        <source>Coin Info</source>
+        <target>Información de la moneda</target>
+        <note>Coin Info</note>
+      </trans-unit>
+      <trans-unit id="English">
+        <source>English</source>
+        <target>Inglesa</target>
+        <note>NSLocalizedString</note>
+      </trans-unit>
+      <trans-unit id="Market Prices">
+        <source>Market Prices</source>
+        <target>Precios de mercado</target>
+        <note>Market Prices</note>
+      </trans-unit>
+      <trans-unit id="Okay">
+        <source>Okay</source>
+        <target>Buena</target>
+        <note>Okay</note>
+      </trans-unit>
+      <trans-unit id="Portfolio">
+        <source>Portfolio</source>
+        <target>Portafolio</target>
+        <note>Portfolio</note>
+      </trans-unit>
+      <trans-unit id="Russian">
+        <source>Russian</source>
+        <target>Rusa</target>
+        <note>NSLocalizedString</note>
+      </trans-unit>
+      <trans-unit id="Sales!">
+        <source>Sales!</source>
+        <target>Ventas!</target>
+        <note>Sales!</note>
+      </trans-unit>
+      <trans-unit id="Sell BTC">
+        <source>Sell BTC</source>
+        <target>Vender BTC</target>
+        <note>Sell BTC</note>
+      </trans-unit>
+      <trans-unit id="Setting">
+        <source>Setting</source>
+        <target>Ajuste</target>
+        <note>Setting</note>
+      </trans-unit>
+      <trans-unit id="Spanish">
+        <source>Spanish</source>
+        <target>Española</target>
+        <note>NSLocalizedString</note>
+      </trans-unit>
+      <trans-unit id="Trade">
+        <source>Trade</source>
+        <target>Comercio</target>
+        <note>Trade</note>
+      </trans-unit>
+      <trans-unit id="Unlimited">
+        <source>Unlimited</source>
+        <target>Ilimitada</target>
+        <note>Unlimited</note>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source>Cancel</source>
+        <target>Cancelar</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="close">
+        <source>Close now</source>
+        <target>Cerrado ahora</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="restart">
+        <source>In order to change the language, the Apple must be closed and reopend bu you.</source>
+        <target>Para cambiar el idioma, Apple debe ser cerrado y reabierto por usted.</target>
+        <note>Localizable.strings
+  Crypto
+
+  Created by Kaiserdem on 16.07.2019.
+  Copyright © 2019 Kaiserdem. All rights reserved.</note>
+      </trans-unit>
+      <trans-unit id="restartTitle">
+        <source>Apple restart required</source>
+        <target>Se requiere reinicio de Apple</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="→slide to buy">
+        <source>→slide to buy</source>
+        <target>→deslice para comprar</target>
+        <note>→slide to buy</note>
+      </trans-unit>
+      <trans-unit id="→slide to sell">
+        <source>→slide to sell</source>
+        <target>→deslice para vender</target>
+        <note>→slide to sell</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Crypto/View/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="es">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="0A2-hW-Aqj.text">
+        <source>Watchlist</source>
+        <target>Favoritos</target>
+        <note>Class = "UILabel"; text = "Watchlist"; ObjectID = "0A2-hW-Aqj";</note>
+      </trans-unit>
+      <trans-unit id="0Fy-T9-jnL.text">
+        <source>BTC</source>
+        <target>BTC</target>
+        <note>Class = "UILabel"; text = "BTC"; ObjectID = "0Fy-T9-jnL";</note>
+      </trans-unit>
+      <trans-unit id="0VZ-Uf-HPV.text">
+        <source>1</source>
+        <target>1</target>
+        <note>Class = "UILabel"; text = "1"; ObjectID = "0VZ-Uf-HPV";</note>
+      </trans-unit>
+      <trans-unit id="3zz-H0-XqW.placeholder">
+        <source>Search</source>
+        <target>Búsqueda</target>
+        <note>Class = "UITextField"; placeholder = "Search"; ObjectID = "3zz-H0-XqW";</note>
+      </trans-unit>
+      <trans-unit id="5x2-T7-MgB.text">
+        <source>BTC</source>
+        <target>BTC</target>
+        <note>Class = "UILabel"; text = "BTC"; ObjectID = "5x2-T7-MgB";</note>
+      </trans-unit>
+      <trans-unit id="7u9-vG-j0j.text">
+        <source>Circulating supply:</source>
+        <target>Moneda emitida:</target>
+        <note>Class = "UILabel"; text = "Circulating supply:"; ObjectID = "7u9-vG-j0j";</note>
+      </trans-unit>
+      <trans-unit id="9ad-Hb-4ln.placeholder">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UITextField"; placeholder = "0"; ObjectID = "9ad-Hb-4ln";</note>
+      </trans-unit>
+      <trans-unit id="9rn-ec-lcJ.text">
+        <source>KRW</source>
+        <target>KRW</target>
+        <note>Class = "UILabel"; text = "KRW"; ObjectID = "9rn-ec-lcJ";</note>
+      </trans-unit>
+      <trans-unit id="23Z-kJ-5eM.text">
+        <source>EUR</source>
+        <target>EUR</target>
+        <note>Class = "UILabel"; text = "EUR"; ObjectID = "23Z-kJ-5eM";</note>
+      </trans-unit>
+      <trans-unit id="86Q-7F-Cth.text">
+        <source>Buy BTC</source>
+        <target>Comprar BTC</target>
+        <note>Class = "UILabel"; text = "Buy BTC"; ObjectID = "86Q-7F-Cth";</note>
+      </trans-unit>
+      <trans-unit id="89a-PZ-WiT.text">
+        <source>Year</source>
+        <target>Año</target>
+        <note>Class = "UILabel"; text = "Year"; ObjectID = "89a-PZ-WiT";</note>
+      </trans-unit>
+      <trans-unit id="AFd-lI-rdr.text">
+        <source>User Account</source>
+        <target>Cuenta de usuario</target>
+        <note>Class = "UILabel"; text = "User Account"; ObjectID = "AFd-lI-rdr";</note>
+      </trans-unit>
+      <trans-unit id="AJ8-qi-OWy.title">
+        <source>Prices</source>
+        <target>Precios</target>
+        <note>Class = "UITabBarItem"; title = "Prices"; ObjectID = "AJ8-qi-OWy";</note>
+      </trans-unit>
+      <trans-unit id="B7v-0B-PeA.text">
+        <source>Exchanges</source>
+        <target>Intercambios</target>
+        <note>Class = "UILabel"; text = "Exchanges"; ObjectID = "B7v-0B-PeA";</note>
+      </trans-unit>
+      <trans-unit id="BER-Or-3Vl.text">
+        <source>Trade</source>
+        <target>El comercio</target>
+        <note>Class = "UILabel"; text = "Trade"; ObjectID = "BER-Or-3Vl";</note>
+      </trans-unit>
+      <trans-unit id="Bag-Io-ZWZ.text">
+        <source>You get:</source>
+        <target>Usted obtiene:</target>
+        <note>Class = "UILabel"; text = "You get:"; ObjectID = "Bag-Io-ZWZ";</note>
+      </trans-unit>
+      <trans-unit id="Bcw-qH-WFv.text">
+        <source>USD</source>
+        <target>USD</target>
+        <note>Class = "UILabel"; text = "USD"; ObjectID = "Bcw-qH-WFv";</note>
+      </trans-unit>
+      <trans-unit id="CHa-Qk-mC3.text">
+        <source>Rank</source>
+        <target>Rango</target>
+        <note>Class = "UILabel"; text = "Rank"; ObjectID = "CHa-Qk-mC3";</note>
+      </trans-unit>
+      <trans-unit id="CVk-Q6-Xz9.title">
+        <source>Portfolio</source>
+        <target>El maletín</target>
+        <note>Class = "UITabBarItem"; title = "Portfolio"; ObjectID = "CVk-Q6-Xz9";</note>
+      </trans-unit>
+      <trans-unit id="Dhh-k4-NL4.text">
+        <source>General</source>
+        <target>Común</target>
+        <note>Class = "UILabel"; text = "General"; ObjectID = "Dhh-k4-NL4";</note>
+      </trans-unit>
+      <trans-unit id="FOJ-lX-C3L.text">
+        <source>Amount:</source>
+        <target>Cantidad:</target>
+        <note>Class = "UILabel"; text = "Amount:"; ObjectID = "FOJ-lX-C3L";</note>
+      </trans-unit>
+      <trans-unit id="FkG-B6-7BB.text">
+        <source>Select Language</source>
+        <target>Seleccionar idioma</target>
+        <note>Class = "UILabel"; text = "Select Language"; ObjectID = "FkG-B6-7BB";</note>
+      </trans-unit>
+      <trans-unit id="FlZ-T0-xYw.text">
+        <source>0 USD</source>
+        <target>0 USD</target>
+        <note>Class = "UILabel"; text = "0 USD"; ObjectID = "FlZ-T0-xYw";</note>
+      </trans-unit>
+      <trans-unit id="Fwp-Oh-Mbv.placeholder">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UITextField"; placeholder = "0"; ObjectID = "Fwp-Oh-Mbv";</note>
+      </trans-unit>
+      <trans-unit id="Ha8-Jk-ipv.text">
+        <source>0 USD</source>
+        <target>0 USD</target>
+        <note>Class = "UILabel"; text = "0 USD"; ObjectID = "Ha8-Jk-ipv";</note>
+      </trans-unit>
+      <trans-unit id="HrR-CT-IMW.title">
+        <source>Item</source>
+        <target>ít</target>
+        <note>Class = "UIBarButtonItem"; title = "Item"; ObjectID = "HrR-CT-IMW";</note>
+      </trans-unit>
+      <trans-unit id="I8A-RN-oOn.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "I8A-RN-oOn";</note>
+      </trans-unit>
+      <trans-unit id="Kek-0D-VXK.text">
+        <source>some@gmail.com</source>
+        <target>some@gmail.com</target>
+        <note>Class = "UILabel"; text = "some@gmail.com"; ObjectID = "Kek-0D-VXK";</note>
+      </trans-unit>
+      <trans-unit id="LOL-Sk-YzO.text">
+        <source>Week</source>
+        <target>Semana</target>
+        <note>Class = "UILabel"; text = "Week"; ObjectID = "LOL-Sk-YzO";</note>
+      </trans-unit>
+      <trans-unit id="Lc4-gv-mxR.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "Lc4-gv-mxR";</note>
+      </trans-unit>
+      <trans-unit id="Llr-4q-v8Q.text">
+        <source>2 Years</source>
+        <target>2 Años</target>
+        <note>Class = "UILabel"; text = "2 Years"; ObjectID = "Llr-4q-v8Q";</note>
+      </trans-unit>
+      <trans-unit id="OZM-se-Mi7.text">
+        <source>21M BTC</source>
+        <target>21M BTC</target>
+        <note>Class = "UILabel"; text = "21M BTC"; ObjectID = "OZM-se-Mi7";</note>
+      </trans-unit>
+      <trans-unit id="ObU-g6-MQ0.text">
+        <source>Price Comparison</source>
+        <target>Comparación de precios</target>
+        <note>Class = "UILabel"; text = "Price Comparison"; ObjectID = "ObU-g6-MQ0";</note>
+      </trans-unit>
+      <trans-unit id="Pom-e1-Hw7.text">
+        <source>USD</source>
+        <target>USD</target>
+        <note>Class = "UILabel"; text = "USD"; ObjectID = "Pom-e1-Hw7";</note>
+      </trans-unit>
+      <trans-unit id="QQp-2q-kFk.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "QQp-2q-kFk";</note>
+      </trans-unit>
+      <trans-unit id="RHQ-ib-ByY.text">
+        <source>Bitcoin</source>
+        <target>Bitcoin</target>
+        <note>Class = "UILabel"; text = "Bitcoin"; ObjectID = "RHQ-ib-ByY";</note>
+      </trans-unit>
+      <trans-unit id="SHY-EM-Hzs.text">
+        <source>Max</source>
+        <target>Máxima</target>
+        <note>Class = "UILabel"; text = "Max"; ObjectID = "SHY-EM-Hzs";</note>
+      </trans-unit>
+      <trans-unit id="SPj-1U-rFf.text">
+        <source>All</source>
+        <target>Todos</target>
+        <note>Class = "UILabel"; text = "All"; ObjectID = "SPj-1U-rFf";</note>
+      </trans-unit>
+      <trans-unit id="TGX-wX-7Fo.text">
+        <source>17.8M BTC</source>
+        <target>17.8M BTC</target>
+        <note>Class = "UILabel"; text = "17.8M BTC"; ObjectID = "TGX-wX-7Fo";</note>
+      </trans-unit>
+      <trans-unit id="Tpb-y1-NsU.text">
+        <source>Day</source>
+        <target>Día</target>
+        <note>Class = "UILabel"; text = "Day"; ObjectID = "Tpb-y1-NsU";</note>
+      </trans-unit>
+      <trans-unit id="TrU-Xw-A7Z.text">
+        <source>12.061</source>
+        <target>12.061</target>
+        <note>Class = "UILabel"; text = "12.061"; ObjectID = "TrU-Xw-A7Z";</note>
+      </trans-unit>
+      <trans-unit id="UgC-VK-Xp0.text">
+        <source>Total supply:</source>
+        <target>Suministro total:</target>
+        <note>Class = "UILabel"; text = "Total supply:"; ObjectID = "UgC-VK-Xp0";</note>
+      </trans-unit>
+      <trans-unit id="V5t-fl-N0C.text">
+        <source>Month</source>
+        <target>Mes</target>
+        <note>Class = "UILabel"; text = "Month"; ObjectID = "V5t-fl-N0C";</note>
+      </trans-unit>
+      <trans-unit id="XSS-gp-1fk.text">
+        <source>YoBit</source>
+        <target>YoBit</target>
+        <note>Class = "UILabel"; text = "YoBit"; ObjectID = "XSS-gp-1fk";</note>
+      </trans-unit>
+      <trans-unit id="Xc7-Bw-cnb.text">
+        <source>Volume 24h:</source>
+        <target>Volumen 24h:</target>
+        <note>Class = "UILabel"; text = "Volume 24h:"; ObjectID = "Xc7-Bw-cnb";</note>
+      </trans-unit>
+      <trans-unit id="Y99-Df-aXP.text">
+        <source>- BTC</source>
+        <target>- BTC</target>
+        <note>Class = "UILabel"; text = "- BTC"; ObjectID = "Y99-Df-aXP";</note>
+      </trans-unit>
+      <trans-unit id="aOk-wV-sBN.text">
+        <source>Amount:</source>
+        <target>Cantidad:</target>
+        <note>Class = "UILabel"; text = "Amount:"; ObjectID = "aOk-wV-sBN";</note>
+      </trans-unit>
+      <trans-unit id="bP9-Ek-fdr.text">
+        <source>Alert</source>
+        <target>Aviso</target>
+        <note>Class = "UILabel"; text = "Alert"; ObjectID = "bP9-Ek-fdr";</note>
+      </trans-unit>
+      <trans-unit id="c8A-gA-vLs.text">
+        <source>Day</source>
+        <target>Día</target>
+        <note>Class = "UILabel"; text = "Day"; ObjectID = "c8A-gA-vLs";</note>
+      </trans-unit>
+      <trans-unit id="ceN-Ie-ID6.text">
+        <source>Watchlist</source>
+        <target>Favoritos</target>
+        <note>Class = "UILabel"; text = "Watchlist"; ObjectID = "ceN-Ie-ID6";</note>
+      </trans-unit>
+      <trans-unit id="dOw-cN-eDm.text">
+        <source>10,950</source>
+        <target>10,950</target>
+        <note>Class = "UILabel"; text = "10,950"; ObjectID = "dOw-cN-eDm";</note>
+      </trans-unit>
+      <trans-unit id="dUb-0T-CyA.text">
+        <source>English</source>
+        <target>Inglesa</target>
+        <note>Class = "UILabel"; text = "English"; ObjectID = "dUb-0T-CyA";</note>
+      </trans-unit>
+      <trans-unit id="db6-qf-B5q.text">
+        <source>Market Cap:</source>
+        <target>Capitalización:</target>
+        <note>Class = "UILabel"; text = "Market Cap:"; ObjectID = "db6-qf-B5q";</note>
+      </trans-unit>
+      <trans-unit id="eYp-gF-a5R.text">
+        <source>Week</source>
+        <target>Semana</target>
+        <note>Class = "UILabel"; text = "Week"; ObjectID = "eYp-gF-a5R";</note>
+      </trans-unit>
+      <trans-unit id="efV-oq-l1C.text">
+        <source>Price:</source>
+        <target>Precio:</target>
+        <note>Class = "UILabel"; text = "Price:"; ObjectID = "efV-oq-l1C";</note>
+      </trans-unit>
+      <trans-unit id="fAS-vE-rw5.title">
+        <source>Settings</source>
+        <target>Settings</target>
+        <note>Class = "UITabBarItem"; title = "Settings"; ObjectID = "fAS-vE-rw5";</note>
+      </trans-unit>
+      <trans-unit id="fMS-m2-NBr.text">
+        <source>1515</source>
+        <target>1515</target>
+        <note>Class = "UILabel"; text = "1515"; ObjectID = "fMS-m2-NBr";</note>
+      </trans-unit>
+      <trans-unit id="fbV-LQ-NVU.text">
+        <source>Last Bitcoin price</source>
+        <target>Last Bitcoin price</target>
+        <note>Class = "UILabel"; text = "Last Bitcoin price"; ObjectID = "fbV-LQ-NVU";</note>
+      </trans-unit>
+      <trans-unit id="ihF-Br-Wxs.text">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "ihF-Br-Wxs";</note>
+      </trans-unit>
+      <trans-unit id="kbo-2Z-k2E.text">
+        <source>BTCUSD</source>
+        <target>BTCUSD</target>
+        <note>Class = "UILabel"; text = "BTCUSD"; ObjectID = "kbo-2Z-k2E";</note>
+      </trans-unit>
+      <trans-unit id="ki6-76-qd4.text">
+        <source>Price:</source>
+        <target>Precio:</target>
+        <note>Class = "UILabel"; text = "Price:"; ObjectID = "ki6-76-qd4";</note>
+      </trans-unit>
+      <trans-unit id="nXQ-In-oN3.text">
+        <source>12.061</source>
+        <target>12.061</target>
+        <note>Class = "UILabel"; text = "12.061"; ObjectID = "nXQ-In-oN3";</note>
+      </trans-unit>
+      <trans-unit id="ouW-oj-vJM.text">
+        <source>$8.2B</source>
+        <target>$8.2B</target>
+        <note>Class = "UILabel"; text = "$8.2B"; ObjectID = "ouW-oj-vJM";</note>
+      </trans-unit>
+      <trans-unit id="p9j-fa-s1B.text">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "p9j-fa-s1B";</note>
+      </trans-unit>
+      <trans-unit id="px5-JL-q7H.text">
+        <source>change</source>
+        <target>cambio</target>
+        <note>Class = "UILabel"; text = "change"; ObjectID = "px5-JL-q7H";</note>
+      </trans-unit>
+      <trans-unit id="q4W-TP-9yM.text">
+        <source>Sell BTC</source>
+        <target>Vender BTC</target>
+        <note>Class = "UILabel"; text = "Sell BTC"; ObjectID = "q4W-TP-9yM";</note>
+      </trans-unit>
+      <trans-unit id="q5S-HU-e4H.text">
+        <source>3.76%</source>
+        <target>3.76%</target>
+        <note>Class = "UILabel"; text = "3.76%"; ObjectID = "q5S-HU-e4H";</note>
+      </trans-unit>
+      <trans-unit id="qMM-xe-x4d.text">
+        <source>BTC</source>
+        <target>BTC</target>
+        <note>Class = "UILabel"; text = "BTC"; ObjectID = "qMM-xe-x4d";</note>
+      </trans-unit>
+      <trans-unit id="rbD-vQ-WY8.text">
+        <source>-USD</source>
+        <target>-USD</target>
+        <note>Class = "UILabel"; text = "-USD"; ObjectID = "rbD-vQ-WY8";</note>
+      </trans-unit>
+      <trans-unit id="sNM-aD-ttM.text">
+        <source>You pay:</source>
+        <target>Tu pagas:</target>
+        <note>Class = "UILabel"; text = "You pay:"; ObjectID = "sNM-aD-ttM";</note>
+      </trans-unit>
+      <trans-unit id="see-xY-kxQ.text">
+        <source>10.3</source>
+        <target>10.3</target>
+        <note>Class = "UILabel"; text = "10.3"; ObjectID = "see-xY-kxQ";</note>
+      </trans-unit>
+      <trans-unit id="sqd-II-65L.title">
+        <source>Portfolio</source>
+        <target>Portafolio</target>
+        <note>Class = "UINavigationItem"; title = "Portfolio"; ObjectID = "sqd-II-65L";</note>
+      </trans-unit>
+      <trans-unit id="svy-26-d8M.text">
+        <source>Month</source>
+        <target>Mes</target>
+        <note>Class = "UILabel"; text = "Month"; ObjectID = "svy-26-d8M";</note>
+      </trans-unit>
+      <trans-unit id="t3A-EO-dzc.text">
+        <source>Max</source>
+        <target>Máxima</target>
+        <note>Class = "UILabel"; text = "Max"; ObjectID = "t3A-EO-dzc";</note>
+      </trans-unit>
+      <trans-unit id="tGr-dc-gNw.text">
+        <source>Year</source>
+        <target>Año</target>
+        <note>Class = "UILabel"; text = "Year"; ObjectID = "tGr-dc-gNw";</note>
+      </trans-unit>
+      <trans-unit id="u7Y-0k-xWB.title">
+        <source>Trade</source>
+        <target>Comercio</target>
+        <note>Class = "UITabBarItem"; title = "Trade"; ObjectID = "u7Y-0k-xWB";</note>
+      </trans-unit>
+      <trans-unit id="uLY-tp-G74.text">
+        <source>Alerts</source>
+        <target>Aviso</target>
+        <note>Class = "UILabel"; text = "Alerts"; ObjectID = "uLY-tp-G74";</note>
+      </trans-unit>
+      <trans-unit id="vKB-Qj-tDW.text">
+        <source>$202.7B</source>
+        <target>$202.7B</target>
+        <note>Class = "UILabel"; text = "$202.7B"; ObjectID = "vKB-Qj-tDW";</note>
+      </trans-unit>
+      <trans-unit id="wVy-K7-Y3d.text">
+        <source>12.164</source>
+        <target>12.164</target>
+        <note>Class = "UILabel"; text = "12.164"; ObjectID = "wVy-K7-Y3d";</note>
+      </trans-unit>
+      <trans-unit id="xNc-Uv-xMV.text">
+        <source>BTC</source>
+        <target>BTC</target>
+        <note>Class = "UILabel"; text = "BTC"; ObjectID = "xNc-Uv-xMV";</note>
+      </trans-unit>
+      <trans-unit id="z3x-ez-gMt.text">
+        <source>Titel</source>
+        <target>Título</target>
+        <note>Class = "UILabel"; text = "Titel"; ObjectID = "z3x-ez-gMt";</note>
+      </trans-unit>
+      <trans-unit id="zGl-pz-sfc.text">
+        <source>App Settings</source>
+        <target>Ajustes de Aplicacion</target>
+        <note>Class = "UILabel"; text = "App Settings"; ObjectID = "zGl-pz-sfc";</note>
+      </trans-unit>
+      <trans-unit id="zvj-1F-z74.text">
+        <source>price</source>
+        <target>precio</target>
+        <note>Class = "UILabel"; text = "price"; ObjectID = "zvj-1F-z74";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -16,25 +16,40 @@ class LanguageVC: UIViewController {
       view.backgroundColor = .white
       buttonEnglish()
       buttonRussian()
+      buttonSpanish()
   }
   func buttonEnglish() {
-    let button = UIButton(frame: CGRect(x: 20, y: 100, width: 100, height: 50))
+    let button = UIButton(frame: CGRect(x: 20, y: 100, width: 120, height: 50))
     button.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
     button.layer.cornerRadius = 6
-    button.setTitle("English", for: .normal)
+    button.setTitle(NSLocalizedString("English", comment: "NSLocalizedString"), for: .normal)
     button.addTarget(self, action: #selector(englishButtonAction), for: .touchUpInside)
     
     self.view.addSubview(button)
   }
   
   func buttonRussian() {
-    let button = UIButton(frame: CGRect(x: 20, y: 200, width: 100, height: 50))
+    let button = UIButton(frame: CGRect(x: 20, y: 200, width: 120, height: 50))
     button.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
     button.layer.cornerRadius = 6
-    button.setTitle("Russian", for: .normal)
+    button.setTitle(NSLocalizedString("Russian", comment: "NSLocalizedString"), for: .normal)
     button.addTarget(self, action: #selector(russianButtonAction), for: .touchUpInside)
     
     self.view.addSubview(button)
+  }
+  func buttonSpanish() {
+    let button = UIButton(frame: CGRect(x: 20, y: 300, width: 120, height: 50))
+    button.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+    button.layer.cornerRadius = 6
+    button.setTitle(NSLocalizedString("Spanish", comment: "NSLocalizedString"), for: .normal)
+    button.addTarget(self, action: #selector(spanishButtonAction), for: .touchUpInside)
+    
+    self.view.addSubview(button)
+  }
+  @objc func spanishButtonAction(sender: UIButton!) {
+    print(" Spanish Button tapped")
+    self.changeToLanguage("es")
+    
   }
   @objc func englishButtonAction(sender: UIButton!) {
     print(" English Button tapped")

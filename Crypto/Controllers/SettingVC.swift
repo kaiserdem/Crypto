@@ -11,6 +11,8 @@ import UIKit
 class SettingVC: UIViewController {
 
  
+  @IBOutlet weak var selectLanguage: UILabel!
+  @IBOutlet weak var currentLanguage: UILabel!
   @IBOutlet weak var languageLabel: UILabel!
   @IBOutlet weak var languageButtonView: UIView!
   @IBOutlet weak var alertsButtonView: UIView!
@@ -38,12 +40,18 @@ class SettingVC: UIViewController {
     grayViewHeaderAppSettings.layer.borderWidth = 1
     grayViewHeaderAppSettings.layer.borderColor = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.8980392157, alpha: 1)
     
+    if selectLanguage.text == "Seleccione el idioma" {
+      currentLanguage.text = "Español"
+    } else if selectLanguage.text == "Выбрать язык" {
+      currentLanguage.text = "Русский"
+    }
+    
   }
     
   private func setupNavBarSettings() {
     let colors: [UIColor] = [#colorLiteral(red: 0, green: 0.7960784314, blue: 0.7921568627, alpha: 1), #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)]
     let titleLabel = UILabel(frame: CGRect(x: view.center.x, y: view.center.y, width: 0, height:0))
-    titleLabel.text = "Setting"
+    titleLabel.text = NSLocalizedString("Setting", comment: "Setting")
     titleLabel.textColor = UIColor.white
     titleLabel.font = UIFont(name:"Helvetica", size:21)
     navigationController?.navigationBar.setGradientBackground(colors: colors)

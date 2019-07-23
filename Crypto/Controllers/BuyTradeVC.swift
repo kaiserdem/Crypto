@@ -84,15 +84,16 @@ class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
     buySlideButton.sliderCornerRadious = 8
     buySlideButton.backgroundColor = .clear
     buySlideButton.thumnailImageView.backgroundColor = #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)
-    buySlideButton.textLabel.text = "→slide to buy"
+    buySlideButton.textLabel.text = NSLocalizedString("→slide to buy", comment: "→slide to buy")
+    //buySlideButton.textForButtonLabel.text = NSLocalizedString("Sell BTC", comment: "Sell BTC")
     buySlideButton.textLabel.font = UIFont(name:"Helvetica", size:12)
     let green = #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)
     buySlideButton.draggedView.backgroundColor = green.withAlphaComponent(0.5)
   }
   
   func mtSlideToOpenDelegateDidFinish(_ sender: MTSlideToOpenView) {
-    let alertController = UIAlertController(title: "", message: "Sales!", preferredStyle: .alert)
-    let doneAction = UIAlertAction(title: "Okay", style: .default) { (action) in
+    let alertController = UIAlertController(title: "", message: NSLocalizedString("Buy!", comment: "Buy"), preferredStyle: .alert)
+    let doneAction = UIAlertAction(title: NSLocalizedString("Okay", comment: "Okay"), style: .default) { (action) in
       sender.resetStateWithAnimation(false)
     }
     alertController.addAction(doneAction)

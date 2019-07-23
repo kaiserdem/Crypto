@@ -1,0 +1,64 @@
+/* →slide to buy */
+"→slide to buy" = "";
+
+/* →slide to sell */
+"→slide to sell" = "";
+
+/* Buy BTC */
+"Buy BTC" = "Comprar BTC";
+
+/* Buy */
+"Buy!" = "Comprar!";
+
+/* (No Comment) */
+"cancel" = "Cancelar";
+
+/* (No Comment) */
+"close" = "Cerrado ahora";
+
+/* Coin Info */
+"Coin Info" = "Información de la moneda";
+
+/* NSLocalizedString */
+"English" = "Inglesa";
+
+/* Market Prices */
+"Market Prices" = "Precios de mercado";
+
+/* Okay */
+"Okay" = "Buena";
+
+/* Portfolio */
+"Portfolio" = "Portafolio";
+
+/* Localizable.strings
+  Crypto
+
+  Created by Kaiserdem on 16.07.2019.
+  Copyright © 2019 Kaiserdem. All rights reserved. */
+"restart" = "Para cambiar el idioma, Apple debe ser cerrado y reabierto por usted.";
+
+/* (No Comment) */
+"restartTitle" = "Se requiere reinicio de Apple";
+
+/* NSLocalizedString */
+"Russian" = "Rusa";
+
+/* Sales! */
+"Sales!" = "Ventas!";
+
+/* Sell BTC */
+"Sell BTC" = "Vender BTC";
+
+/* Setting */
+"Setting" = "Ajuste";
+
+/* NSLocalizedString */
+"Spanish" = "Española";
+
+/* Trade */
+"Trade" = "Comercio";
+
+/* Unlimited */
+"Unlimited" = "Ilimitada";
+

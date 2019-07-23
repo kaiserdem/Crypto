@@ -80,16 +80,16 @@ class SellTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate 
     buySlideButton.sliderCornerRadious = 8
     buySlideButton.backgroundColor = .clear
     buySlideButton.thumnailImageView.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.5058823529, blue: 0.3960784314, alpha: 1)
-    buySlideButton.textLabel.text = "→slide to sell"
-    buySlideButton.textForButtonLabel.text = "Sell BTC"
+    buySlideButton.textLabel.text = NSLocalizedString("→slide to sell", comment: "→slide to sell")
+    buySlideButton.textForButtonLabel.text = NSLocalizedString("Sell BTC", comment: "Sell BTC")
     buySlideButton.textLabel.font = UIFont(name:"Helvetica", size:12)
     let green = #colorLiteral(red: 0.9725490196, green: 0.5058823529, blue: 0.3960784314, alpha: 1)
     buySlideButton.draggedView.backgroundColor = green.withAlphaComponent(0.5)
   }
   
   func mtSlideToOpenDelegateDidFinish(_ sender: MTSlideToOpenView) {
-    let alertController = UIAlertController(title: "", message: "Sales!", preferredStyle: .alert)
-    let doneAction = UIAlertAction(title: "Okay", style: .default) { (action) in
+    let alertController = UIAlertController(title: "", message: NSLocalizedString("Sales!", comment: "Sales!"), preferredStyle: .alert)
+    let doneAction = UIAlertAction(title: NSLocalizedString("Okay", comment: "Okay"), style: .default) { (action) in
       sender.resetStateWithAnimation(false)
     }
     alertController.addAction(doneAction)

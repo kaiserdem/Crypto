@@ -1,0 +1,55 @@
+/* Buy BTC */
+"Buy BTC" = "Купить BTC";
+
+/* Buy */
+"Buy!" = "Купить!";
+
+/* (No Comment) */
+"cancel" = "Отменить";
+
+/* (No Comment) */
+"close" = "Закрыть сейчас";
+
+/* Coin Info */
+"Coin Info" = "Детальная информация";
+
+/* NSLocalizedString */
+"English" = "Английский";
+
+/* Market Prices */
+"Market Prices" = "Актуальные цены";
+
+/* Okay */
+"Okay" = "Хорошо";
+
+/* Portfolio */
+"Portfolio" = "Портфель";
+
+/* Localizable.strings
+  Crypto
+
+  Created by Kaiserdem on 16.07.2019.
+  Copyright © 2019 Kaiserdem. All rights reserved. */
+"restart" = "Чтобы изменить язык, устройство Apple должно быть закрыто и вновь открыто вами.";
+
+/* (No Comment) */
+"restartTitle" = "Требуется перезагрузка устройство Apple";
+
+/* NSLocalizedString */
+"Russian" = "Русский";
+
+/* Sales! */
+"Sales!" = "Продано!";
+
+/* Sell BTC */
+"Sell BTC" = "Продать BTC";
+
+/* Setting */
+"Setting" = "Настройки";
+
+/* NSLocalizedString */
+"Spanish" = "Испанский";
+
+/* Trade */
+"Trade" = "Торговля";
+
