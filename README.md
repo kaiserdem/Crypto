@@ -1,5 +1,5 @@
 # Crypto
-Replica good crypto
+Replica Good Crypto LLC
 
 ![allScreens](https://user-images.githubusercontent.com/32749258/63085487-51ae9780-bf56-11e9-9209-740e596fb739.jpeg)
 
