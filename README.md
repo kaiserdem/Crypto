@@ -1,7 +1,5 @@
 # Crypto
-
 ### Replica "Good Crypto LLC"
-
 ![eEQJl_croper_ru](https://user-images.githubusercontent.com/32749258/63184580-519abe80-c060-11e9-88cf-fbc19ec43141.jpeg)
 
 
