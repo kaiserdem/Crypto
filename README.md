@@ -1,7 +1,9 @@
 # Crypto
 Replica Good Crypto LLC
 
-![allScreens](https://user-images.githubusercontent.com/32749258/63085487-51ae9780-bf56-11e9-9209-740e596fb739.jpeg)
+![BO0Sp_croper_ru](https://user-images.githubusercontent.com/32749258/63184579-51022800-c060-11e9-9ba1-9e9c1fa3aee7.jpeg)
+
+![eEQJl_croper_ru](https://user-images.githubusercontent.com/32749258/63184580-519abe80-c060-11e9-88cf-fbc19ec43141.jpeg)
 
 
 * Real-time cryptocurrency price monitoring
@@ -13,3 +15,5 @@ Replica Good Crypto LLC
 
 # Credits 
 Design and Server API: Good Crypto LLC
+
+Watch code in a branch "dev" and "language"
