@@ -1,5 +1,5 @@
 # Crypto
-Replica Good Crypto LLC
+### Replica Good Crypto LLC
 
 ![BO0Sp_croper_ru](https://user-images.githubusercontent.com/32749258/63184579-51022800-c060-11e9-9ba1-9e9c1fa3aee7.jpeg)
 
