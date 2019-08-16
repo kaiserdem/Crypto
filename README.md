@@ -9,5 +9,5 @@ Replica Good Crypto LLC
 4. Currency information with charts for different periods of time4. Support for different languages of application management (English, Russian, Spanish)
 5. Application supports vertical and horizontal orientation
 
-#Credits 
+# Credits 
 Design and Server API: Good Crypto LLC
