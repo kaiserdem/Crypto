@@ -14,9 +14,9 @@
 * Application supports vertical and horizontal orientation
 
 # Main functionality
-using WebSoket 
-using cocoapods
-using json
+* using WebSoket 
+* using cocoapods
+* using json
 
 # Credits 
 Design and Server API: Good Crypto LLC
