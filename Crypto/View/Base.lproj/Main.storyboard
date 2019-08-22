@@ -161,12 +161,13 @@
                                     <segue destination="TlQ-Gb-1p4" kind="embed" identifier="infoSegue" id="Oqg-HN-3I3"/>
                                 </connections>
                             </containerView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-zy-4J9">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-zy-4J9">
                                 <rect key="frame" x="147.5" y="261.5" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="0W0-xb-pHI"/>
                                     <constraint firstAttribute="width" secondItem="EvX-zy-4J9" secondAttribute="height" multiplier="1:1" id="ZRz-F0-f5X"/>
                                 </constraints>
+                                <color key="color" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" name="grayLite229"/>

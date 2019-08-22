@@ -85,7 +85,6 @@ class CoinInfoVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    //  fetchAssets()
     fetchSparklineItem()
     updateAssets()
     setupNavBarSettings()
@@ -142,7 +141,7 @@ class CoinInfoVC: UIViewController {
       let maxSupplyDouble = Double((1*maxSupply!).rounded()/1000000).rounded(toPlaces: 1)
       self.maxSupplyLabel.text = String(describing: maxSupplyDouble) + "M BTC"
       
-      self.progressViewBack.backgroundColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+      self.progressViewBack.backgroundColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
       self.topProgresView.backgroundColor = #colorLiteral(red: 0.451000005, green: 0.6859999895, blue: 0.1490000039, alpha: 1)
       
       
@@ -396,7 +395,6 @@ class CoinInfoVC: UIViewController {
   }
   
   @objc func dayAction(_ sender:UITapGestureRecognizer){
-    DispatchQueue.main.async {
       if self.chartDayArray.isEmpty != true {
       self.setLineChart(values: self.chartDayArray as! [Double])
         
@@ -411,10 +409,8 @@ class CoinInfoVC: UIViewController {
       self.monthTopView.backgroundColor = .clear
       self.yearTopView.backgroundColor = .clear
       self.twoYearsTopView.backgroundColor = .clear
-    }
   }
   @objc func weekAction(_ sender:UITapGestureRecognizer){
-    DispatchQueue.main.async {
       if self.chartDayArray.isEmpty != true {
       self.setLineChart(values: self.chartWeekArray as! [Double])
       
@@ -429,10 +425,8 @@ class CoinInfoVC: UIViewController {
       self.monthTopView.backgroundColor = .clear
       self.yearTopView.backgroundColor = .clear
       self.twoYearsTopView.backgroundColor = .clear
-    }
   }
   @objc func monthAction(_ sender:UITapGestureRecognizer){
-    DispatchQueue.main.async {
       if self.chartDayArray.isEmpty != true {
       self.setLineChart(values: self.chartMounthArray as! [Double])
       
@@ -447,10 +441,8 @@ class CoinInfoVC: UIViewController {
       self.monthTopView.backgroundColor = .black
       self.yearTopView.backgroundColor = .clear
       self.twoYearsTopView.backgroundColor = .clear
-    }
   }
   @objc func yearAction(_ sender:UITapGestureRecognizer){
-    DispatchQueue.main.async {
       if self.chartDayArray.isEmpty != true {
       self.setLineChart(values: self.chartYearArray as! [Double])
         
@@ -465,10 +457,8 @@ class CoinInfoVC: UIViewController {
       self.monthTopView.backgroundColor = .clear
       self.yearTopView.backgroundColor = .black
       self.twoYearsTopView.backgroundColor = .clear
-    }
   }
   @objc func twoYearsAction(_ sender:UITapGestureRecognizer){
-    DispatchQueue.main.async {
       if self.chartDayArray.isEmpty != true {
       self.setLineChart(values: self.chartTwoYaearArray as! [Double])
     
@@ -477,7 +467,6 @@ class CoinInfoVC: UIViewController {
       
       let minPrice = self.chartTwoYaearArray as! [Double]
       self.minPriceLabel.text = String(describing:(minPrice.min()!.rounded(toPlaces: 2)))
-      }
       self.dayTopView.backgroundColor = .clear
       self.weekTopView.backgroundColor = .clear
       self.monthTopView.backgroundColor = .clear
