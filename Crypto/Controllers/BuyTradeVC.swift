@@ -12,7 +12,7 @@ let keyHidenUiNotification = "KeyHidenUiNotification"
 let keyShowUiNotification = "KeyShowUiNotification"
 
 class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
-
+  
   @IBOutlet weak var backView: UIView!
   @IBOutlet weak var youPayCountLabel: UILabel!
   @IBOutlet weak var priceCountLabel: UILabel!
@@ -24,8 +24,8 @@ class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
   
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
+    super.viewDidLoad()
+    
     amountTextField.delegate = self
     setSlideButtonSettings()
     
@@ -36,33 +36,39 @@ class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
     maxButtonView.layer.borderWidth = 1
     maxButtonView.layer.borderColor = #colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)
     maxButtonView.layer.cornerRadius = 6
-   
+    
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     
-  NotificationCenter.default.addObserver(self, // вторая нотификация убрать UI
-  selector: #selector(doThisWhenNotify),
-  name: NSNotification.Name(rawValue: keyHidenUiNotification),
-  object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(doThisWhenNotify),
+                                           name: NSNotification.Name(rawValue: keyHidenUiNotification),
+                                           object: nil)
     
-  NotificationCenter.default.addObserver(self, // вторая нотификация убрать UI
-  selector: #selector(doThisWhenNotify),
-  name: NSNotification.Name(rawValue: keyShowUiNotification),
-  object: nil)
-}
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(doThisWhenNotify),
+                                           name: NSNotification.Name(rawValue: keyShowUiNotification),
+                                           object: nil)
+  }
   
   deinit {
     NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+    
     NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    
     NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: keyHidenUiNotification), object: nil)
+    
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: keyShowUiNotification), object: nil)
   }
   
   @objc func keyboardWillChange(notification: NSNotification) {
     
-     NotificationCenter.default.post(name: Notification.Name(rawValue: keyHidenUiNotification), object: self) // вторая нотификация убрать UI
+    NotificationCenter.default.post(name: Notification.Name(rawValue: keyHidenUiNotification), object: self)
     
     guard let keyboardRect = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
       return
@@ -71,7 +77,7 @@ class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
       notification.name == UIResponder.keyboardWillChangeFrameNotification {
       view.frame.origin.y = -keyboardRect.height
     }else {
-      NotificationCenter.default.post(name: Notification.Name(rawValue: keyShowUiNotification), object: self) // вторая нотификация убрать UI
+      NotificationCenter.default.post(name: Notification.Name(rawValue: keyShowUiNotification), object: self)
       view.frame.origin.y = 0
     }
   }
@@ -85,7 +91,6 @@ class BuyTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate {
     buySlideButton.backgroundColor = .clear
     buySlideButton.thumnailImageView.backgroundColor = #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)
     buySlideButton.textLabel.text = NSLocalizedString("→slide to buy", comment: "→slide to buy")
-    //buySlideButton.textForButtonLabel.text = NSLocalizedString("Sell BTC", comment: "Sell BTC")
     buySlideButton.textLabel.font = UIFont(name:"Helvetica", size:12)
     let green = #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)
     buySlideButton.draggedView.backgroundColor = green.withAlphaComponent(0.5)

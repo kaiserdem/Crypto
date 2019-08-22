@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 class TradeVC: UIViewController {
-
+  
   @IBOutlet weak var buyBTCWidthConstraint: NSLayoutConstraint!
   @IBOutlet weak var mainViewBar: UIView!
   @IBOutlet weak var barViewTopBlack: UIView!
@@ -20,7 +20,7 @@ class TradeVC: UIViewController {
   @IBOutlet weak var secondGrayView: UIView!
   @IBOutlet weak var whiteViewForChart: UIView!
   @IBOutlet weak var backTopGrayView: UIView!
-
+  
   @IBOutlet weak var buttonViewBuyBTC: UIView!
   
   @IBOutlet weak var labelButtonBuyBTC: UILabel!
@@ -50,9 +50,11 @@ class TradeVC: UIViewController {
   @IBOutlet weak var monthTopView: UIView!
   @IBOutlet weak var yearTopView: UIView!
   
-  override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var offlineBarButton: UIBarButtonItem! 
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
     setupNavBarSettings()
     setupBuyBarGestures()
     setupChartsBarGestures()
@@ -60,18 +62,18 @@ class TradeVC: UIViewController {
     openButtonViewBuyBTC()
     closeButtonViewSellBTC()
     
-  NotificationCenter.default.addObserver(self,
-  selector: #selector(hidenUiNotified),
-  name: NSNotification.Name(rawValue: keyHidenUiNotification),
-  object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(hidenUiNotified),
+                                           name: NSNotification.Name(rawValue: keyHidenUiNotification),
+                                           object: nil)
     
-  NotificationCenter.default.addObserver(self,
-  selector: #selector(showUINotified),
-  name: NSNotification.Name(rawValue: keyShowUiNotification),
-  object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(showUINotified),
+                                           name: NSNotification.Name(rawValue: keyShowUiNotification),
+                                           object: nil)
     
   }
-
+  
   @objc func hidenUiNotified() {
     mainViewBar.isHidden = true
     usdLabel.isHidden = true
@@ -81,7 +83,7 @@ class TradeVC: UIViewController {
     minPriceChartLabel.isHidden = true
     buttonViewBuyBTC.isUserInteractionEnabled = false
     buttonViewSellBTC.isUserInteractionEnabled = false
-
+    
   }
   @objc func showUINotified() {
     mainViewBar.isHidden = false
@@ -93,7 +95,7 @@ class TradeVC: UIViewController {
     buttonViewBuyBTC.isUserInteractionEnabled = true
     buttonViewSellBTC.isUserInteractionEnabled = true
   }
-    
+  
   private func setupNavBarSettings() {
     let colors: [UIColor] = [#colorLiteral(red: 0, green: 0.7960784314, blue: 0.7921568627, alpha: 1), #colorLiteral(red: 0.4509803922, green: 0.6862745098, blue: 0.1490196078, alpha: 1)]
     let titleLabel = UILabel(frame: CGRect(x: view.center.x, y: view.center.y, width: 0, height:0))
@@ -150,41 +152,41 @@ class TradeVC: UIViewController {
   }
   
   func setupChartsBarGestures() {
-
+    
     let dayTextViewGesture = UITapGestureRecognizer(target: self, action:  #selector (dayAction (_:)))
     let weekTextViewGesture = UITapGestureRecognizer(target: self, action:  #selector (weekAction (_:)))
     let monthTextViewGesture = UITapGestureRecognizer(target: self, action:  #selector (monthAction (_:)))
     let yearTopViewGesture = UITapGestureRecognizer(target: self, action:  #selector (yearAction (_:)))
     
-    self.dayTextView.addGestureRecognizer(dayTextViewGesture)
-    self.weekTextView.addGestureRecognizer(weekTextViewGesture)
-    self.monthTextView.addGestureRecognizer(monthTextViewGesture)
-    self.yearTextView.addGestureRecognizer(yearTopViewGesture)
+    dayTextView.addGestureRecognizer(dayTextViewGesture)
+    weekTextView.addGestureRecognizer(weekTextViewGesture)
+    monthTextView.addGestureRecognizer(monthTextViewGesture)
+    yearTextView.addGestureRecognizer(yearTopViewGesture)
   }
   
   @objc func dayAction(_ sender:UITapGestureRecognizer){
-    self.dayTopView.backgroundColor = .black
-    self.weekTopView.backgroundColor = .clear
-    self.monthTopView.backgroundColor = .clear
-    self.yearTopView.backgroundColor = .clear
+    dayTopView.backgroundColor = .black
+    weekTopView.backgroundColor = .clear
+    monthTopView.backgroundColor = .clear
+    yearTopView.backgroundColor = .clear
   }
   @objc func weekAction(_ sender:UITapGestureRecognizer){
-    self.dayTopView.backgroundColor = .clear
-    self.weekTopView.backgroundColor = .black
-    self.monthTopView.backgroundColor = .clear
-    self.yearTopView.backgroundColor = .clear
+    dayTopView.backgroundColor = .clear
+    weekTopView.backgroundColor = .black
+    monthTopView.backgroundColor = .clear
+    yearTopView.backgroundColor = .clear
   }
   @objc func monthAction(_ sender:UITapGestureRecognizer){
-    self.dayTopView.backgroundColor = .clear
-    self.weekTopView.backgroundColor = .clear
-    self.monthTopView.backgroundColor = .black
-    self.yearTopView.backgroundColor = .clear
+    dayTopView.backgroundColor = .clear
+    weekTopView.backgroundColor = .clear
+    monthTopView.backgroundColor = .black
+    yearTopView.backgroundColor = .clear
   }
   @objc func yearAction(_ sender:UITapGestureRecognizer){
-    self.dayTopView.backgroundColor = .clear
-    self.weekTopView.backgroundColor = .clear
-    self.monthTopView.backgroundColor = .clear
-    self.yearTopView.backgroundColor = .black
+    dayTopView.backgroundColor = .clear
+    weekTopView.backgroundColor = .clear
+    monthTopView.backgroundColor = .clear
+    yearTopView.backgroundColor = .black
   }
   
   @objc func buttonViewBuyBTCAction(_ sender:UITapGestureRecognizer){
@@ -244,14 +246,5 @@ class TradeVC: UIViewController {
     lineChartView.xAxis.drawLabelsEnabled = false
     
   }
-//  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//    super.viewWillTransition(to: size, with: coordinator)
-//
-//    if UIDevice.current.orientation.isLandscape {
-//      viewTopConstraint.constant = -7
-//    } else {
-//      viewTopConstraint.constant = 0
-//    }
-//  }
-
 }
+

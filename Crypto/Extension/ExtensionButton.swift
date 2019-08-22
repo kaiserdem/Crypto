@@ -11,7 +11,7 @@ import UIKit
 extension UIButton {
 
   func flash() { // мигание
-    
+
     let flash = CABasicAnimation(keyPath: "opacity")
     flash.duration = 0.5
     flash.fromValue = 1

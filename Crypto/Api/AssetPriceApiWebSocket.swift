@@ -8,25 +8,29 @@
 
 import UIKit
 
-class AssetPriceApiWebSocket: NSObject {
+let keyDissconectedNotification = "keyDCNotification"
+let keyConectedNotification = "keyConNotification"
 
+class AssetPriceApiWebSocket: NSObject {
   
   static let sharedInstance = AssetPriceApiWebSocket()
   
   func fetchWebSocket(completion: @escaping (AssetPriceWSModel?) -> ()) {
     
     let ws = WebSocket("wss://demo.cryptto.io:8777")
-    
     ws.event.open = {
       print("opened")
+      NotificationCenter.default.post(name: Notification.Name(rawValue: keyConectedNotification), object: self)
     }
     ws.event.close = { code, reason, clean in
       print("close")
+      NotificationCenter.default.post(name: Notification.Name(rawValue: keyDissconectedNotification), object: self)
       ws.open()
     }
     ws.event.error = { error in
       print("error \(error)")
       ws.open()
+      print("open after error")
     }
     ws.event.message = { message in
       
@@ -67,6 +71,12 @@ class AssetPriceApiWebSocket: NSObject {
       }
     }
   }
+  deinit {
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: keyDissconectedNotification), object: nil)
+    
+    NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: keyConectedNotification), object: nil)
+  }
+  
 }
 
 /*

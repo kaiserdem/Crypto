@@ -16,7 +16,7 @@ class CoinInfoTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      modelArray = ["Гена", "Чебурашка", "Апельсины", "Фиксики", "Роботы", "Машинки", "Маша", "И Медведь", "Матроскин", "Шарик", "Печкин", "Доктор Хаус"]
+      modelArray = ["bitcoin", "litecoin", "xrp", "bitcoin cash", "ethreum", "tether", "eos", "stellar", "carnado", "monero", "dash"]
         
     }
 
@@ -49,7 +49,7 @@ class CoinInfoTableVC: UITableViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "InfoSegue" {
       let infoTabVC = segue.destination as? CoinInfoTableVC
-      infoTabVC?.modelArray = ["proSwift.ru", "Данные", "переданные", "в", "контейнер", "при", "инициализации", "в", "методе", "родительского", "контроллера"]
+      infoTabVC?.modelArray = ["bitcoin", "litecoin", "xrp", "bitcoin cash", "ethreum", "tether", "eos", "stellar", "carnado", "monero", "dash"]
     }
   }
 }

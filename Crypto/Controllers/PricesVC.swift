@@ -11,8 +11,8 @@ import Charts
 
 class PricesVC: UIViewController, UITextFieldDelegate {
   
+  @IBOutlet weak var activitiIndicator: UIActivityIndicatorView!
   @IBOutlet weak var widthView: NSLayoutConstraint!
-  @IBOutlet weak var offlineBarButton: UIBarButtonItem!
   @IBOutlet weak var allCountAssetsLabel: UILabel!
   @IBOutlet weak var contentViewOutlet: UIView!
   @IBOutlet weak var backBarCornerView: UIView!
@@ -21,24 +21,91 @@ class PricesVC: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var watchlistCustButOutlet: UIView!
   @IBOutlet weak var serchButtonOutlet: UIButton!
   @IBOutlet weak var serchtTFOutlet: UITextField!
-  
+  @IBOutlet weak var offlineBarButton: UIBarButtonItem! {
+    didSet {
+      let icon = UIImage(named: "offline")
+      let iconSize = CGRect(origin: .zero, size: icon!.size)
+      let iconButton = UIButton(frame: iconSize)
+      iconButton.setBackgroundImage(icon, for: .normal)
+      iconButton.addTarget(self, action: #selector(pressedOfflineAction), for: .touchUpInside)
+      offlineBarButton.customView = iconButton
+      offlineBarButton.customView!.transform = CGAffineTransform(scaleX: 0, y: 0)
+      
+      UIView.animate(withDuration: 1.0,
+                                 delay: 0.5,
+                                 options: [ .curveEaseOut, .repeat],
+                                 animations: {
+
+                                  UIView.setAnimationRepeatCount(10)
+        self.offlineBarButton.customView!.transform = CGAffineTransform.identity
+      }, completion: nil)
+    }
+  }
+
   var assetsResours: [Assets] = []
   var assets: [Assets] = []
   var prices: AssetPriceWSModel?
   var pricesArrayEmpty: [NSMutableArray] = []
   var assetsArrayEmpty: [Assets] = []
   var watchlistArray: [Assets] = []
-  
+ 
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupNavBarSettings()
     setupTopBarSettings()
-    fetchAssetsResours()
-    fetchAssets()
-    offlineBarButton.tintColor = .white
+    
+    activitiIndicator.startAnimating()
+    activitiIndicator.hidesWhenStopped = true
+    
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(disconectedNotified),
+                                           name: NSNotification.Name(rawValue: keyDissconectedNotification),
+                                           object: nil)
+    
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(conectedNotified),
+                                           name: NSNotification.Name(rawValue: keyConectedNotification),
+                                           object: nil)
   }
- 
+  
+  func disconectedWebSocket() {
+    offlineBarButton.tintColor = .red
+    offlineBarButton.customView!.transform = CGAffineTransform(scaleX: 0, y: 0)
+    UIView.animate(withDuration: 0.7,
+                   delay: 0.5,
+                   options: [ .curveEaseOut, .repeat],
+                   animations: {
+                    
+                    UIView.setAnimationRepeatCount(15)
+                    self.offlineBarButton.customView!.transform = CGAffineTransform.identity
+    }) { (true) in
+    }
+  }
+  
+  @objc func disconectedNotified() {
+    offlineBarButton.customView!.isHidden = false
+    print("Disconected Notified_Disconected Notified_Disconected Notified")
+    disconectedWebSocket()
+  }
+  
+  @objc func conectedNotified() {
+    offlineBarButton.customView!.isHidden = true
+    print("ConectedNotified_ConectedNotified_Conected Notified")
+  }
+  @objc func pressedOfflineAction() {
+    offlineBarButton.customView!.transform = CGAffineTransform(scaleX: 0, y: 0)
+    UIView.animate(withDuration: 0.7,
+                   delay: 0.5,
+                   options: [ .curveEaseOut, .repeat],
+                   animations: {
+
+                    UIView.setAnimationRepeatCount(20)
+                    self.offlineBarButton.customView!.transform = CGAffineTransform.identity
+    }, completion: nil)
+  }
+
+  
   func fetchAssets() {
     AssetsApiWebSocket.sharedInstance.fetchAssets { [weak self] (assetsArray: [Assets]?) in
       guard let strongSelf = self else { return }
@@ -52,7 +119,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
         for i in (priceArray?.prices ?? self!.pricesArrayEmpty) {
           if ((i.firstObject as? NSString) != nil) {
             let newId = i.firstObject
-            for oldId in self!.assets ?? self!.assetsArrayEmpty {
+            for oldId in self!.assets {
               if oldId.id!.isEqual(newId) {
                 sameId = 1
                 if ((i.lastObject as? Double) != nil) {
@@ -60,7 +127,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
                   if sameId == 1 {
                     for oldPrice in self!.assets {
                       if oldPrice.id!.isEqual(i.firstObject) {
-                        oldPrice.price = newPrice as! Double
+                        oldPrice.price = newPrice as? Double
                       }
                     }
                   }
@@ -71,23 +138,12 @@ class PricesVC: UIViewController, UITextFieldDelegate {
           DispatchQueue.main.async {
             (self!.children[0] as? PricesTableVC)?.assetsModel = (self?.assets)!
             (self!.children[0] as? PricesTableVC)?.tableView.reloadData()
+            self?.activitiIndicator.stopAnimating()
           }
         }
       }
     }
   }
-  
-//  func calculatewidth() {
-//
-//
-//
-//    if (self.all?.characters.count)! >= currrentCountText {
-//
-//    }
-//  }
-
-  
-
   func fetchAssetsResours() {
     ApiForResource.sharedInstance.fetchAssetsResource { [weak self] (assetsArray: [Assets]?) in
       guard let strongSelf = self else { return }
@@ -133,7 +189,7 @@ class PricesVC: UIViewController, UITextFieldDelegate {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "infoSegue" {
       let infoTabVC = segue.destination as? PricesTableVC
-      fetchAssets()
+       fetchAssets()
        infoTabVC?.assetsModel = self.assets
     }
   }

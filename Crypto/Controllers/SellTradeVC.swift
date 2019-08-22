@@ -39,12 +39,12 @@ class SellTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate 
     
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     
-    NotificationCenter.default.addObserver(self, // вторая нотификация убрать UI
+    NotificationCenter.default.addObserver(self, // убрать UI
       selector: #selector(doThisWhenNotify),
       name: NSNotification.Name(rawValue: keyHidenUiNotification),
       object: nil)
     
-    NotificationCenter.default.addObserver(self, // вторая нотификация убрать UI
+    NotificationCenter.default.addObserver(self,
       selector: #selector(doThisWhenNotify),
       name: NSNotification.Name(rawValue: keyShowUiNotification),
       object: nil)
@@ -58,7 +58,7 @@ class SellTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate 
   
   @objc func keyboardWillChange(notification: NSNotification) {
     
-    NotificationCenter.default.post(name: Notification.Name(rawValue: keyHidenUiNotification), object: self) // вторая нотификация убрать UI
+    NotificationCenter.default.post(name: Notification.Name(rawValue: keyHidenUiNotification), object: self) //  убрать UI
     
     guard let keyboardRect = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
       return
@@ -67,7 +67,7 @@ class SellTradeVC: UIViewController, MTSlideToOpenDelegate, UITextFieldDelegate 
       notification.name == UIResponder.keyboardWillChangeFrameNotification {
       view.frame.origin.y = -keyboardRect.height
     }else {
-      NotificationCenter.default.post(name: Notification.Name(rawValue: keyShowUiNotification), object: self) // вторая нотификация убрать UI
+      NotificationCenter.default.post(name: Notification.Name(rawValue: keyShowUiNotification), object: self) //  убрать UI
       view.frame.origin.y = 0
     }
   }
