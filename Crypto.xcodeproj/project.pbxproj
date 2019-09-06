@@ -43,6 +43,7 @@
 		ADDB7A682322A803005E2480 /* ExtUIViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A632322A803005E2480 /* ExtUIViewShadow.swift */; };
 		ADDB7A692322A803005E2480 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A642322A803005E2480 /* ExtUIView.swift */; };
 		ADDB7A6A2322A803005E2480 /* ExtRoundedDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A652322A803005E2480 /* ExtRoundedDouble.swift */; };
+		ADDB7A6C2322AAF2005E2480 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A6B2322AAF2005E2480 /* AuthVC.swift */; };
 		ADF418BC22BAF037008C4D5C /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BB22BAF037008C4D5C /* Portfolio.swift */; };
 		ADF418C222BB8D1E008C4D5C /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C122BB8D1E008C4D5C /* SettingVC.swift */; };
 		ADF418C522BBB127008C4D5C /* ParsAllJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C422BBB127008C4D5C /* ParsAllJsonModel.swift */; };
@@ -98,6 +99,7 @@
 		ADDB7A632322A803005E2480 /* ExtUIViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIViewShadow.swift; sourceTree = "<group>"; };
 		ADDB7A642322A803005E2480 /* ExtUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 		ADDB7A652322A803005E2480 /* ExtRoundedDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtRoundedDouble.swift; sourceTree = "<group>"; };
+		ADDB7A6B2322AAF2005E2480 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		ADF418BB22BAF037008C4D5C /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		ADF418C122BB8D1E008C4D5C /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		ADF418C422BBB127008C4D5C /* ParsAllJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsAllJsonModel.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				AD36711122D908B900649258 /* BuyTradeVC.swift */,
 				AD36711322D908D500649258 /* SellTradeVC.swift */,
 				AD4BECD222DDED6700D64A36 /* LanguageVC.swift */,
+				ADDB7A6B2322AAF2005E2480 /* AuthVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				ADD0D98122C8F47B003A58C0 /* CoinInfoTableVC.swift in Sources */,
 				AD7405A822D0E0E3009030BD /* ItemSparklineModel.swift in Sources */,
 				AD2C8F2A22BF6E5D00BCEA14 /* AssetPriceApiWebSocket.swift in Sources */,
+				ADDB7A6C2322AAF2005E2480 /* AuthVC.swift in Sources */,
 				ADD0D98322C9EB61003A58C0 /* CoinInfoTableViewCell.swift in Sources */,
 				AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */,
 				AD2992D922B8E8E200AD1A3A /* PricesVC.swift in Sources */,
