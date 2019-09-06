@@ -23,7 +23,6 @@
 		AD38A08322BD325E00F13835 /* PricesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A08222BD325E00F13835 /* PricesTableViewCell.swift */; };
 		AD4BECD322DDED6700D64A36 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BECD222DDED6700D64A36 /* LanguageVC.swift */; };
 		AD4BECD822DE05B400D64A36 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4BECDA22DE05B400D64A36 /* Localizable.strings */; };
-		AD5C30BA22C65AB0009DEE4C /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */; };
 		AD5F157322BBDCB0008AC2F4 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */; };
 		AD5F157B22BBDE41008AC2F4 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */; };
 		AD5F157C22BBDE41008AC2F4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F157622BBDE41008AC2F4 /* libz.tbd */; };
@@ -39,15 +38,18 @@
 		AD7405A822D0E0E3009030BD /* ItemSparklineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7405A722D0E0E3009030BD /* ItemSparklineModel.swift */; };
 		ADD0D98122C8F47B003A58C0 /* CoinInfoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */; };
 		ADD0D98322C9EB61003A58C0 /* CoinInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0D98222C9EB61003A58C0 /* CoinInfoTableViewCell.swift */; };
+		ADDB7A662322A803005E2480 /* ExtGragientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A612322A803005E2480 /* ExtGragientColor.swift */; };
+		ADDB7A672322A803005E2480 /* ExtButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A622322A803005E2480 /* ExtButton.swift */; };
+		ADDB7A682322A803005E2480 /* ExtUIViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A632322A803005E2480 /* ExtUIViewShadow.swift */; };
+		ADDB7A692322A803005E2480 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A642322A803005E2480 /* ExtUIView.swift */; };
+		ADDB7A6A2322A803005E2480 /* ExtRoundedDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB7A652322A803005E2480 /* ExtRoundedDouble.swift */; };
 		ADF418BC22BAF037008C4D5C /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BB22BAF037008C4D5C /* Portfolio.swift */; };
-		ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418BE22BB7DC8008C4D5C /* ExtensionGragientColor.swift */; };
 		ADF418C222BB8D1E008C4D5C /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C122BB8D1E008C4D5C /* SettingVC.swift */; };
 		ADF418C522BBB127008C4D5C /* ParsAllJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C422BBB127008C4D5C /* ParsAllJsonModel.swift */; };
 		ADF418C722BBB146008C4D5C /* AssetsJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C622BBB146008C4D5C /* AssetsJsonModel.swift */; };
 		ADF418C922BBB185008C4D5C /* ExchangesJsomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418C822BBB185008C4D5C /* ExchangesJsomModel.swift */; };
 		ADF418CB22BBB1A7008C4D5C /* AssetPriceWSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CA22BBB1A7008C4D5C /* AssetPriceWSModel.swift */; };
 		ADF418CD22BBB1C5008C4D5C /* AssetSparklineWSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CC22BBB1C5008C4D5C /* AssetSparklineWSModel.swift */; };
-		ADF418CF22BBB24C008C4D5C /* ExtensionRoundedDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF418CE22BBB24C008C4D5C /* ExtensionRoundedDouble.swift */; };
 		AE2F23182CA2CA058DB47FE9 /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A9F505C4E988B885F20223 /* Pods_Crypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +78,6 @@
 		AD4BECD922DE05B400D64A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4BECDB22DE05F300D64A36 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4BECDC22DE05F600D64A36 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
 		AD5F157222BBDCB0008AC2F4 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		AD5F157522BBDE41008AC2F4 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		AD5F157622BBDE41008AC2F4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -92,15 +93,18 @@
 		AD7405A722D0E0E3009030BD /* ItemSparklineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSparklineModel.swift; sourceTree = "<group>"; };
 		ADD0D98022C8F47B003A58C0 /* CoinInfoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableVC.swift; sourceTree = "<group>"; };
 		ADD0D98222C9EB61003A58C0 /* CoinInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoTableViewCell.swift; sourceTree = "<group>"; };
+		ADDB7A612322A803005E2480 /* ExtGragientColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtGragientColor.swift; sourceTree = "<group>"; };
+		ADDB7A622322A803005E2480 /* ExtButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtButton.swift; sourceTree = "<group>"; };
+		ADDB7A632322A803005E2480 /* ExtUIViewShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIViewShadow.swift; sourceTree = "<group>"; };
+		ADDB7A642322A803005E2480 /* ExtUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
+		ADDB7A652322A803005E2480 /* ExtRoundedDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtRoundedDouble.swift; sourceTree = "<group>"; };
 		ADF418BB22BAF037008C4D5C /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
-		ADF418BE22BB7DC8008C4D5C /* ExtensionGragientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGragientColor.swift; sourceTree = "<group>"; };
 		ADF418C122BB8D1E008C4D5C /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		ADF418C422BBB127008C4D5C /* ParsAllJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsAllJsonModel.swift; sourceTree = "<group>"; };
 		ADF418C622BBB146008C4D5C /* AssetsJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsJsonModel.swift; sourceTree = "<group>"; };
 		ADF418C822BBB185008C4D5C /* ExchangesJsomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesJsomModel.swift; sourceTree = "<group>"; };
 		ADF418CA22BBB1A7008C4D5C /* AssetPriceWSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPriceWSModel.swift; sourceTree = "<group>"; };
 		ADF418CC22BBB1C5008C4D5C /* AssetSparklineWSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSparklineWSModel.swift; sourceTree = "<group>"; };
-		ADF418CE22BBB24C008C4D5C /* ExtensionRoundedDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRoundedDouble.swift; sourceTree = "<group>"; };
 		E7A9F505C4E988B885F20223 /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,9 +221,11 @@
 		ADF418BD22BB7DB3008C4D5C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ADF418BE22BB7DC8008C4D5C /* ExtensionGragientColor.swift */,
-				ADF418CE22BBB24C008C4D5C /* ExtensionRoundedDouble.swift */,
-				AD5C30B922C65AB0009DEE4C /* ExtensionButton.swift */,
+				ADDB7A622322A803005E2480 /* ExtButton.swift */,
+				ADDB7A612322A803005E2480 /* ExtGragientColor.swift */,
+				ADDB7A652322A803005E2480 /* ExtRoundedDouble.swift */,
+				ADDB7A642322A803005E2480 /* ExtUIView.swift */,
+				ADDB7A632322A803005E2480 /* ExtUIViewShadow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -374,16 +380,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDB7A682322A803005E2480 /* ExtUIViewShadow.swift in Sources */,
 				ADF418BC22BAF037008C4D5C /* Portfolio.swift in Sources */,
+				ADDB7A672322A803005E2480 /* ExtButton.swift in Sources */,
 				ADF418C922BBB185008C4D5C /* ExchangesJsomModel.swift in Sources */,
 				ADF418C222BB8D1E008C4D5C /* SettingVC.swift in Sources */,
 				ADF418C722BBB146008C4D5C /* AssetsJsonModel.swift in Sources */,
+				ADDB7A6A2322A803005E2480 /* ExtRoundedDouble.swift in Sources */,
 				ADF418CB22BBB1A7008C4D5C /* AssetPriceWSModel.swift in Sources */,
 				AD38A08322BD325E00F13835 /* PricesTableViewCell.swift in Sources */,
 				AD2C8F2E22C0D74800BCEA14 /* CoinInfoVC.swift in Sources */,
 				AD36711222D908B900649258 /* BuyTradeVC.swift in Sources */,
 				AD2992ED22BA61A300AD1A3A /* TradeVC.swift in Sources */,
-				ADF418BF22BB7DC8008C4D5C /* ExtensionGragientColor.swift in Sources */,
 				AD2992E922B904FD00AD1A3A /* PricesTableVC.swift in Sources */,
 				AD5F158522BC0B1D008AC2F4 /* ApiForResource.swift in Sources */,
 				AD7405A622D0E07C009030BD /* SparklineItemApiWebSocket.swift in Sources */,
@@ -394,11 +402,11 @@
 				AD2C8F2822BF6AE100BCEA14 /* SparklineApiWebSocket.swift in Sources */,
 				AD2992D922B8E8E200AD1A3A /* PricesVC.swift in Sources */,
 				ADF418CD22BBB1C5008C4D5C /* AssetSparklineWSModel.swift in Sources */,
+				ADDB7A662322A803005E2480 /* ExtGragientColor.swift in Sources */,
 				ADF418C522BBB127008C4D5C /* ParsAllJsonModel.swift in Sources */,
 				AD4BECD322DDED6700D64A36 /* LanguageVC.swift in Sources */,
-				AD5C30BA22C65AB0009DEE4C /* ExtensionButton.swift in Sources */,
-				ADF418CF22BBB24C008C4D5C /* ExtensionRoundedDouble.swift in Sources */,
 				AD2992D722B8E8E200AD1A3A /* AppDelegate.swift in Sources */,
+				ADDB7A692322A803005E2480 /* ExtUIView.swift in Sources */,
 				AD5F158322BBE0BE008AC2F4 /* AssetsApiWebSocket.swift in Sources */,
 				AD36711422D908D500649258 /* SellTradeVC.swift in Sources */,
 				AD36711022D8FEFB00649258 /* MTSlideToOpenView.swift in Sources */,
