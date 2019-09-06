@@ -10,7 +10,8 @@ import UIKit
 
 class SettingVC: UIViewController {
 
- 
+  @IBOutlet weak var singUpBtnOutlet: UIButton!
+  @IBOutlet weak var logInBtnOutlet: UIButton!
   @IBOutlet weak var selectLanguage: UILabel!
   @IBOutlet weak var currentLanguage: UILabel!
   @IBOutlet weak var languageLabel: UILabel!
@@ -30,6 +31,8 @@ class SettingVC: UIViewController {
     setupSettingsBarGestures()
     setupLanguageGestured()
     openGeneralButton()
+    setTitleLanguageBtn()
+    
     backCornerView.layer.cornerRadius = 8
     firstBackView.sendSubviewToBack(rightColorView)
     
@@ -40,12 +43,21 @@ class SettingVC: UIViewController {
     grayViewHeaderAppSettings.layer.borderWidth = 1
     grayViewHeaderAppSettings.layer.borderColor = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.8980392157, alpha: 1)
     
+    singUpBtnOutlet.layer.cornerRadius = 5
+    singUpBtnOutlet.layer.borderWidth = 1
+    singUpBtnOutlet.layer.borderColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+    
+    logInBtnOutlet.layer.cornerRadius = 5
+    logInBtnOutlet.layer.borderWidth = 1
+    logInBtnOutlet.layer.borderColor = #colorLiteral(red: 0.7529411765, green: 0.7529411765, blue: 0.7529411765, alpha: 1)
+    
+  }
+  func setTitleLanguageBtn() {
     if selectLanguage.text == "Seleccione el idioma" {
       currentLanguage.text = "Español"
     } else if selectLanguage.text == "Выбрать язык" {
       currentLanguage.text = "Русский"
     }
-    
   }
     
   private func setupNavBarSettings() {
@@ -144,6 +156,16 @@ class SettingVC: UIViewController {
     openAlertsButton()
     closeGeneralButton()
     closeExchangesButton()
+  }
+  
+  @IBAction func logInBtnAction(_ sender: Any) {
+    guard let someVC = storyboard?.instantiateViewController(withIdentifier: "AuthVCIdentifier") as? AuthVC else { return }
+    present(someVC, animated: true, completion: nil)
+  }
+  
+  @IBAction func singInBtnAction(_ sender: Any) {
+    guard let someVC = storyboard?.instantiateViewController(withIdentifier: "AuthVCIdentifier") as? AuthVC else { return }
+    present(someVC, animated: true, completion: nil)
   }
   
 }
